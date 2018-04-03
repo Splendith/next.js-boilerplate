@@ -58,9 +58,11 @@ typings/
 .env
 
 # Next.js
-/build
-/dist
-/.next
+build
+dist
+.next
 
 # Misc
 .DS_Store
+.vscode
+.idea
