@@ -14,7 +14,6 @@ Fully Integrates with
 * Client routes ( using [next-routes](https://github.com/fridays/next-routes) )
 * Server routes ( using [express](https://github.com/expressjs/express) )
 * CSS / SCSS / fonts / images ES6 import **
-* CSS Modules
 * [NProgress](https://github.com/rstacruz/nprogress)
 
 ### 2. [ESLint](https://github.com/eslint/eslint) with airbnb convention
