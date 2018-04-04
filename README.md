@@ -24,5 +24,6 @@ Fully Integrates with
 * [axios](https://github.com/axios/axios)
 * [cross-env](https://github.com/kentcdodds/cross-env)
 * [rimraf](https://github.com/isaacs/rimraf)
+* [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
 
 \*\* May not compatible with Next.js hot reloading
