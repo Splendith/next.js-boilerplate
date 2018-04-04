@@ -9,14 +9,20 @@ import Router from 'next/router';
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 
-// SCSS Layout
-import '~/scss/layout.scss';
+// Styled Component
+import { injectGlobal } from 'styled-components';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
 };
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
+
+injectGlobal`
+  body {
+    font-family: Arial
+  }
+`;
 
 const Layout = props => (
   <div className="root">

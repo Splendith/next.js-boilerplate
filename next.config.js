@@ -2,11 +2,10 @@ const path = require('path');
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config');
 
 const withCSS = require('@zeit/next-css');
-const withSass = require('@zeit/next-sass');
 const withImages = require('./config/load-images');
 const withFonts = require('./config/load-fonts');
 
-module.exports = withFonts(withImages(withSass(withCSS({
+module.exports = withFonts(withImages(withCSS({
   webpack: (configParam, { isServer }) => {
     let config = configParam;
 
@@ -28,4 +27,4 @@ module.exports = withFonts(withImages(withSass(withCSS({
 
     return config;
   },
-}))));
+})));

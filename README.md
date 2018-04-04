@@ -13,7 +13,8 @@ Fully Integrates with
 * [Redux Persist](https://github.com/rt2zz/redux-persist)
 * Client routes ( using [next-routes](https://github.com/fridays/next-routes) )
 * Server routes ( using [express](https://github.com/expressjs/express) )
-* CSS / SCSS / fonts / images ES6 import **
+* [Styled Components](https://github.com/styled-components/styled-components)
+* CSS / fonts / images ES6 import **
 * [NProgress](https://github.com/rstacruz/nprogress)
 
 ### 2. [ESLint](https://github.com/eslint/eslint) with airbnb convention
