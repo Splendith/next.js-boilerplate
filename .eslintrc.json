@@ -1,0 +1,23 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true
+    },
+    "rules": {
+        "no-console": "off",
+        "no-unused-vars": "warn",
+        "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+        "react/react-in-jsx-scope": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "class-methods-use-this": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "babel-plugin-root-import": {
+          "rootPathPrefix": "~"
+        }
+      }
+    }
+}
