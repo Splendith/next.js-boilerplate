@@ -11,7 +11,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
+        <Head>
+          <link rel="stylesheet" href="/_next/static/style.css" />
+          {this.props.styleTags}
+        </Head>
         <body>
           <Main />
           <NextScript />
