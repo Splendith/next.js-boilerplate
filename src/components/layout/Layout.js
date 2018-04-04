@@ -12,6 +12,9 @@ import NProgress from 'nprogress';
 // Styled Component
 import { injectGlobal } from 'styled-components';
 
+// Font
+import lato from './fonts/Lato-Light.ttf';
+
 Router.onRouteChangeStart = () => {
   NProgress.start();
 };
@@ -19,6 +22,10 @@ Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
 injectGlobal`
+  @font-face {
+    font-family: 'Lato';
+    src: url(${lato});
+  }
   body {
     font-family: Arial
   }
@@ -28,7 +35,6 @@ const Layout = props => (
   <div className="root">
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <link rel="stylesheet" href="/_next/static/style.css" />
     </Head>
     {props.children}
   </div>

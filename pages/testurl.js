@@ -1,6 +1,7 @@
 import withRedux from 'next-redux-wrapper';
 import initStore from '~/src/store/';
 import { Link } from '~/src/routes';
+import Head from 'next/head';
 
 import PropTypes from 'prop-types';
 import Layout from '~/src/components/layout/Layout';
@@ -8,6 +9,9 @@ import Counter from '~/src/components/Counter';
 
 const TestUrl = props => (
   <Layout>
+    <Head>
+      <title>Test URL</title>
+    </Head>
     <div>ID: {props.url.query.id}</div>
     <div>Query ID: {props.url.query.queryId}</div>
     <br />
