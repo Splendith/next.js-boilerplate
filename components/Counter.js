@@ -38,8 +38,8 @@ Counter.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    count: state.test.count,
-    countPersist: state.test.countPersist,
+    count: state.counter.count,
+    countPersist: state.counter.countPersist,
     status: state.status,
   };
 }

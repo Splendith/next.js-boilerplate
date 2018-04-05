@@ -13,7 +13,7 @@ const testPersistConfig = {
 
 const rootReducer = combineReducers({
   status: statusReducer,
-  test: persistReducer(testPersistConfig, counterReducer),
+  counter: persistReducer(testPersistConfig, counterReducer),
 });
 
 export default rootReducer;
