@@ -17,13 +17,13 @@ Fully Integrates with
 * CSS / fonts / images ES6 import **
 * [NProgress](https://github.com/rstacruz/nprogress)
 
-### 2. [ESLint](https://github.com/eslint/eslint) with airbnb convention
+### 2. [Jest](https://facebook.github.io/jest/)
+### 3. [ESLint](https://github.com/eslint/eslint) with airbnb convention
 
 ## Other necessary packages
 
 * [axios](https://github.com/axios/axios)
 * [cross-env](https://github.com/kentcdodds/cross-env)
-* [rimraf](https://github.com/isaacs/rimraf)
 * [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
 
 \*\* May not compatible with Next.js hot reloading
