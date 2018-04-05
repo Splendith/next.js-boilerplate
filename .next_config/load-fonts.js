@@ -10,7 +10,7 @@ module.exports = (nextConfig = {}) =>
         use: {
           loader: 'url-loader',
           options: {
-            limit: 131072,
+            limit: 8192,
             publicPath: './_next/static/fonts/',
             outputPath: 'static/fonts',
             name: '[name]-[hash].[ext]',

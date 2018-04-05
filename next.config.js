@@ -2,8 +2,8 @@ const path = require('path');
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config');
 
 const withCSS = require('@zeit/next-css');
-const withImages = require('./config/load-images');
-const withFonts = require('./config/load-fonts');
+const withImages = require('./.next_config/load-images');
+const withFonts = require('./.next_config/load-fonts');
 
 module.exports = withFonts(withImages(withCSS({
   webpack: (configParam, { isServer }) => {

@@ -10,7 +10,7 @@ module.exports = (nextConfig = {}) =>
         use: {
           loader: 'url-loader',
           options: {
-            limit: 131072,
+            limit: 8192,
             publicPath: './_next/static/images/',
             outputPath: 'static/images/',
             name: '[name]-[hash].[ext]',
