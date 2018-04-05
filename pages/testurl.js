@@ -1,11 +1,11 @@
 import withRedux from 'next-redux-wrapper';
-import initStore from '~/src/store/';
-import { Link } from '~/src/routes';
+import initStore from '~/store/';
+import { Link } from '~/routes';
 import Head from 'next/head';
 
 import PropTypes from 'prop-types';
-import Layout from '~/src/components/layout/Layout';
-import Counter from '~/src/components/Counter';
+import Layout from '~/components/layout/Layout';
+import Counter from '~/components/Counter';
 
 const TestUrl = props => (
   <Layout>

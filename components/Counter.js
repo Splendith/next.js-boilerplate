@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addCount, clearCount } from '~/src/actions/counter';
+import { addCount, clearCount } from '~/actions/counter';
 
 class Counter extends Component {
   renderLoading() {

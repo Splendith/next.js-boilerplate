@@ -3,7 +3,7 @@
     "env": {
         "browser": true,
         "node": true,
-        "jasmine": true
+        "jest": true
     },
     "rules": {
         "no-console": "off",
@@ -14,7 +14,8 @@
         "jsx-a11y/anchor-is-valid": "off",
         "class-methods-use-this": "off",
         "jsx-a11y/html-has-lang": "off",
-        "no-unused-expressions": "off"
+        "no-unused-expressions": "off",
+        "import/no-extraneous-dependencies": "off"
     },
     "settings": {
       "import/resolver": {
