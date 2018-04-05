@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import storage from 'redux-persist/lib/storage';
+import storage from 'localforage';
 import { persistReducer } from 'redux-persist';
 
-import StatusReducer from './reducer_status';
-import CounterReducer from './reducer_counter';
+import statusReducer from './statusReducer';
+import counterReducer from './counterReducer';
 
 const testPersistConfig = {
   key: 'test',
@@ -12,8 +12,8 @@ const testPersistConfig = {
 };
 
 const rootReducer = combineReducers({
-  status: StatusReducer,
-  test: persistReducer(testPersistConfig, CounterReducer),
+  status: statusReducer,
+  test: persistReducer(testPersistConfig, counterReducer),
 });
 
 export default rootReducer;
