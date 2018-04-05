@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing full snapshot 1`] = `
+<div
+  className="root"
+>
+  <h1
+    className="Header-jn44e3-0 fQscfW"
+  >
+    Hello! Hover me~
+  </h1>
+  <img
+    alt="Smile"
+    className="Image-jn44e3-1 owrux"
+    src="test-file-stub"
+  />
+  <a
+    href="/test/5?queryId=8"
+    onClick={[Function]}
+  >
+    Test link with /test/5?queryId=8
+  </a>
+  <div>
+    <br />
+    <button
+      onClick={[Function]}
+    >
+      Add count
+    </button>
+     
+    <button
+      onClick={[Function]}
+    >
+      Clear count
+    </button>
+    <br />
+    <br />
+    <div>
+      Counter: 
+      0
+    </div>
+    <div>
+      Loading...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`With Snapshot Testing shallow snapshot 1`] = `
+<Layout>
+  <SideEffect(Head)>
+    <title>
+      Hello world!
+    </title>
+  </SideEffect(Head)>
+  <Header>
+    Hello! Hover me~
+  </Header>
+  <Image
+    alt="Smile"
+    src="test-file-stub"
+  />
+  <LinkRoutes
+    route="/test/5?queryId=8"
+  >
+    <a>
+      Test link with /test/5?queryId=8
+    </a>
+  </LinkRoutes>
+  <Connect(Counter) />
+</Layout>
+`;
