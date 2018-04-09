@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addCount, clearCount } from '~/actions/counter';
+import Button from '@atlaskit/button';
+
+import styled from 'styled-components';
+
+const StyledButton = styled(Button)`
+  color: red !important;
+`;
 
 class Counter extends Component {
   renderLoading() {
@@ -17,8 +24,12 @@ class Counter extends Component {
     return (
       <div>
         <br />
-        <button onClick={this.props.addCount}>Add count</button>{' '}
-        <button onClick={this.props.clearCount}>Clear count</button>
+        <StyledButton appearance="primary" onClick={this.props.addCount}>
+          Add count
+        </StyledButton>{' '}
+        <StyledButton onClick={this.props.clearCount} className="red-bg">
+          Clear count
+        </StyledButton>
         <br />
         <br />
         <div>Counter: {this.props.count}</div>
