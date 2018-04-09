@@ -8,7 +8,7 @@ import Button from '@atlaskit/button';
 import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
-  color: red !important;
+  padding: 0 40px;
 `;
 
 class Counter extends Component {

@@ -12,9 +12,6 @@ import NProgress from 'nprogress';
 // Styled Component
 import { injectGlobal } from 'styled-components';
 
-// Font
-import lato from './fonts/Lato-Light.ttf';
-
 Router.onRouteChangeStart = () => {
   NProgress.start();
 };
@@ -24,7 +21,7 @@ Router.onRouteChangeError = () => NProgress.done();
 injectGlobal`
   @font-face {
     font-family: 'Lato';
-    src: url(${lato});
+    src: url('/static/fonts/Lato-Light.ttf');
   }
   body {
     font-family: Arial
