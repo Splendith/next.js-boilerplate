@@ -1,24 +1,27 @@
+import Head from 'next/head';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import withRedux from 'next-redux-wrapper';
 import initStore from '~/store/';
 import { Link } from '~/routes';
-import Head from 'next/head';
 
-import PropTypes from 'prop-types';
 import Layout from '~/components/layout/Layout';
-import Counter from '~/components/Counter';
+import CounterPage from '~/components/CounterPage';
 
 const TestUrl = props => (
   <Layout>
-    <Head>
-      <title>Test URL</title>
-    </Head>
-    <div>ID: {props.url.query.id}</div>
-    <div>Query ID: {props.url.query.queryId}</div>
-    <br />
-    <Link route="/">
-      <a>Index</a>
-    </Link>
-    <Counter />
+    <CounterPage>
+      <Head>
+        <title>Test URL</title>
+      </Head>
+      <h2>URL Result</h2>
+      <div>ID: {props.url.query.id}, Query ID: {props.url.query.queryId}</div>
+      <br />
+      <Link route="/">
+        <a>Back to index</a>
+      </Link>
+    </CounterPage>
   </Layout>
 );
 

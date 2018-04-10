@@ -8,13 +8,13 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import App, { Index } from '~/pages/index';
 
 describe('With Enzyme', () => {
-  it('should shows "Hello! Hover me~"', () => {
+  it('should shows "Hello world!"', () => {
     const app = shallow(<Index />);
 
     expect(app
-      .find('Header')
+      .find('Title')
       .children()
-      .text()).toEqual('Hello! Hover me~');
+      .text()).toEqual('Hello world!');
   });
 });
 

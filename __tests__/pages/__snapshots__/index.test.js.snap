@@ -4,43 +4,66 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 <div
   className="root"
 >
-  <h1
-    className="Header-jn44e3-0 fQscfW"
+  <div
+    className="Wrapper-s17x8e2k-0 jhHFlr"
   >
-    Hello! Hover me~
-  </h1>
-  <img
-    alt="Smile"
-    className="Image-jn44e3-1 owrux"
-    src="test-file-stub"
-  />
-  <a
-    href="/test/5?queryId=8"
-    onClick={[Function]}
-  >
-    Test link with /test/5?queryId=8
-  </a>
-  <div>
-    <br />
-    <button
-      onClick={[Function]}
+    <div
+      className="Wrapper-s1taabva-0 iVPNZX"
     >
-      Add count
-    </button>
-     
-    <button
-      onClick={[Function]}
-    >
-      Clear count
-    </button>
-    <br />
-    <br />
-    <div>
-      Counter: 
-      0
-    </div>
-    <div>
-      Loading...
+      <div
+        className="s3q1xxi-0-Container-gZqETv eMhdke"
+      >
+        <h1
+          className="Title-jn44e3-0 iTtVtA"
+        >
+          Hello world!
+        </h1>
+        <div
+          className="Image-jn44e3-1 fTtOUh"
+        >
+          <img
+            alt="Smile"
+            src="test-file-stub"
+          />
+        </div>
+        <a
+          href="/test/5?queryId=8"
+          onClick={[Function]}
+        >
+          Test link with /test/5?queryId=8
+        </a>
+      </div>
+      <div
+        className="s3q1xxi-0-Container-gZqETv cAZKnA"
+      >
+        <h3>
+          Redux global state
+        </h3>
+        <button
+          className="Button-s1cqxo1l-0 dexqqJ"
+          color="primary"
+          onClick={[Function]}
+        >
+          Add count
+        </button>
+         
+        <button
+          className="red-bg Button-s1cqxo1l-0 jGLFQZ"
+          color="default"
+          onClick={[Function]}
+        >
+          Clear count
+        </button>
+        <br />
+        <br />
+        <div>
+          Counter: 
+          0
+        </div>
+        <div>
+          Loading...
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -48,25 +71,28 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
 <Layout>
-  <SideEffect(Head)>
-    <title>
+  <CounterPage>
+    <SideEffect(Head)>
+      <title>
+        Hello world!
+      </title>
+    </SideEffect(Head)>
+    <Title>
       Hello world!
-    </title>
-  </SideEffect(Head)>
-  <Header>
-    Hello! Hover me~
-  </Header>
-  <Image
-    alt="Smile"
-    src="test-file-stub"
-  />
-  <LinkRoutes
-    route="/test/5?queryId=8"
-  >
-    <a>
-      Test link with /test/5?queryId=8
-    </a>
-  </LinkRoutes>
-  <Connect(Counter) />
+    </Title>
+    <Image>
+      <img
+        alt="Smile"
+        src="test-file-stub"
+      />
+    </Image>
+    <LinkRoutes
+      route="/test/5?queryId=8"
+    >
+      <a>
+        Test link with /test/5?queryId=8
+      </a>
+    </LinkRoutes>
+  </CounterPage>
 </Layout>
 `;

@@ -9,8 +9,8 @@ import Router from 'next/router';
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 
-// Styled Component
-import { injectGlobal } from 'styled-components';
+import styled from 'styled-components';
+import './Global';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -18,13 +18,14 @@ Router.onRouteChangeStart = () => {
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-injectGlobal`
-  @font-face {
-    font-family: 'Lato';
-    src: url('/static/fonts/Lato-Light.ttf');
-  }
-  body {
-    font-family: Arial
+const Wrapper = styled.div`
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  
+  @media (min-width: 480px) {
+    width: 400px;
+    padding: 40px 10px;
   }
 `;
 
@@ -33,7 +34,7 @@ const Layout = props => (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     </Head>
-    {props.children}
+    <Wrapper>{props.children}</Wrapper>
   </div>
 );
 

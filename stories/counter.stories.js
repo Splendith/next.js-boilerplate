@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import Counter from '~/components/Counter';
+import '~/components/layout/Global';
 
 import initStore from '~/store/';
 
@@ -14,7 +15,5 @@ const Wrapper = () => (
     <Counter />
   </Provider>
 );
-
-export default Wrapper;
 
 storiesOf('Counter', module).add('default', () => <Wrapper />);
