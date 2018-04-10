@@ -8,6 +8,8 @@ import { Link } from '~/routes';
 import Layout from '~/components/layout/Layout';
 import CounterPage from '~/components/CounterPage';
 
+import withRoot from '~/src/withRoot';
+
 // Sample ES6 import
 import smile from './img/smile.png';
 
@@ -36,4 +38,4 @@ export const Index = () => (
   </Layout>
 );
 
-export default withRedux(initStore)(Index);
+export default withRoot(withRedux(initStore)(Index));

@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addCount, clearCount } from '~/actions/counter';
 
-import { Button, Container } from '~/components/ui';
+import { Container } from '~/components/ui';
+import Button from 'material-ui/Button';
 
 const ModifyContainer = Container.extend`
   background: #f5f5f5;
@@ -23,10 +24,10 @@ class Counter extends Component {
     return (
       <ModifyContainer>
         <h3>Redux global state</h3>
-        <Button color="primary" onClick={this.props.addCount}>
+        <Button variant="raised" color="primary" onClick={this.props.addCount}>
           Add count
         </Button>{' '}
-        <Button ghost onClick={this.props.clearCount} className="red-bg">
+        <Button onClick={this.props.clearCount}>
           Clear count
         </Button>
         <br />
