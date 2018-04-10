@@ -27,7 +27,7 @@ class Counter extends Component {
         <Button variant="raised" color="primary" onClick={this.props.addCount}>
           Add count
         </Button>{' '}
-        <Button onClick={this.props.clearCount}>
+        <Button variant="raised" onClick={this.props.clearCount}>
           Clear count
         </Button>
         <br />

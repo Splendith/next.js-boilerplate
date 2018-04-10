@@ -16,6 +16,7 @@
     "no-unused-expressions": "off",
     "jsx-a11y/html-has-lang": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-closing-tag-location": "off",
     "react/react-in-jsx-scope": "off"
   },
   "settings": {

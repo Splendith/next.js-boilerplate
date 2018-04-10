@@ -8,6 +8,8 @@ import { Link } from '~/routes';
 import Layout from '~/components/layout/Layout';
 import CounterPage from '~/components/CounterPage';
 
+import withRoot from '~/src/withRoot';
+
 const TestUrl = props => (
   <Layout>
     <CounterPage>
@@ -28,4 +30,4 @@ TestUrl.propTypes = {
   url: PropTypes.shape().isRequired,
 };
 
-export default withRedux(initStore)(TestUrl);
+export default withRoot(withRedux(initStore)(TestUrl));
