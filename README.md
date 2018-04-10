@@ -16,6 +16,7 @@ Fully Integrates with
 * [Styled Components](https://github.com/styled-components/styled-components)
 * CSS / fonts / images ES6 import **
 * [NProgress](https://github.com/rstacruz/nprogress)
+* [Material UI next](https://material-ui-next.com/)
 
 ### 2. [Jest](https://facebook.github.io/jest/)
 ### 3. [ESLint](https://github.com/eslint/eslint) with airbnb convention
