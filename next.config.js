@@ -1,4 +1,3 @@
-const path = require('path');
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config');
 
 const withCSS = require('@zeit/next-css');

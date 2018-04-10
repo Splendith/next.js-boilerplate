@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import withRedux from 'next-redux-wrapper';

@@ -10,7 +10,7 @@ import { loadSuccess } from '../actions/status';
 export default (initialState) => {
   const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunk)));
 
-  const ps = persistStore(store, null, () => {
+  /* const ps = */ persistStore(store, null, () => {
     store.dispatch(loadSuccess());
   });
 
