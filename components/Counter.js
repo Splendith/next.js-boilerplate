@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { addCount, clearCount } from '~/actions/counter';
 
-import { Button, Container } from '~/components/ui';
+import { Container, Row, Col, Button } from 'reactstrap';
 
-const ModifyContainer = Container.extend`
+const ModifyContainer = styled(Container)`
+  padding: 20px;
   background: #f5f5f5;
 `;
 
@@ -22,17 +24,21 @@ class Counter extends Component {
   render() {
     return (
       <ModifyContainer>
-        <h3>Redux global state</h3>
-        <Button color="primary" onClick={this.props.addCount}>
-          Add count
-        </Button>{' '}
-        <Button ghost onClick={this.props.clearCount}>
-          Clear count
-        </Button>
-        <br />
-        <br />
-        <div>Counter: {this.props.count}</div>
-        {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
+        <Row>
+          <Col>
+            <h5>Redux global state</h5>
+            <Button color="primary" onClick={this.props.addCount}>
+              Add count
+            </Button>{' '}
+            <Button outline onClick={this.props.clearCount}>
+              Clear count
+            </Button>
+            <br />
+            <br />
+            <div>Counter: {this.props.count}</div>
+            {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
+          </Col>
+        </Row>
       </ModifyContainer>
     );
   }

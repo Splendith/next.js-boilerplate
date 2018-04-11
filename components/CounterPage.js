@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Container } from '~/components/ui';
+import { Container, Row, Col } from 'reactstrap';
 import Counter from './Counter';
 
-const ModifyContainer = Container.extend`
+const ModifyContainer = styled(Container)`
+  padding: 20px;
   background: #fdfdfd;
   text-align: center;
 `;
@@ -15,7 +16,11 @@ const Wrapper = styled.div`
 
 const CounterPage = props => (
   <Wrapper>
-    <ModifyContainer>{props.children}</ModifyContainer>
+    <ModifyContainer>
+      <Row>
+        <Col>{props.children}</Col>
+      </Row>
+    </ModifyContainer>
     <Counter />
   </Wrapper>
 );

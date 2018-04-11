@@ -16,6 +16,7 @@
   "dependencies": {
     "@zeit/next-css": "^0.1.5",
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.0",
     "express": "^4.16.3",
     "localforage": "^1.7.1",
     "next": "^5.1.0",
@@ -27,6 +28,7 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
+    "reactstrap": "^5.0.0-beta.3",
     "redux": "^3.7.2",
     "redux-persist": "^5.9.1",
     "redux-thunk": "^2.2.0",
