@@ -8,60 +8,76 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     className="Wrapper-s17x8e2k-0 jhHFlr"
   >
     <div
-      className="Wrapper-s1taabva-0 iVPNZX"
+      className="Wrapper-s1taabva-1 bXfdKh"
     >
       <div
-        className="s3q1xxi-0-Container-gZqETv eMhdke"
+        className="ModifyContainer-s1taabva-0 jfDPNW container"
       >
-        <h1
-          className="Title-jn44e3-0 iTtVtA"
-        >
-          Hello world!
-        </h1>
         <div
-          className="Image-jn44e3-1 fTtOUh"
+          className="row"
         >
-          <img
-            alt="Smile"
-            src="test-file-stub"
-          />
+          <div
+            className="col"
+          >
+            <h1
+              className="Title-jn44e3-0 iTtVtA"
+            >
+              Hello world!
+            </h1>
+            <div
+              className="Image-jn44e3-1 fTtOUh"
+            >
+              <img
+                alt="Smile"
+                src="test-file-stub"
+              />
+            </div>
+            <a
+              href="/test/5?queryId=8"
+              onClick={[Function]}
+            >
+              Test link with /test/5?queryId=8
+            </a>
+          </div>
         </div>
-        <a
-          href="/test/5?queryId=8"
-          onClick={[Function]}
-        >
-          Test link with /test/5?queryId=8
-        </a>
       </div>
       <div
-        className="s3q1xxi-0-Container-gZqETv cAZKnA"
+        className="ModifyContainer-s168kvmw-0 fddpNu container"
       >
-        <h3>
-          Redux global state
-        </h3>
-        <button
-          className="Button-s1cqxo1l-0 dexqqJ"
-          color="primary"
-          onClick={[Function]}
+        <div
+          className="row"
         >
-          Add count
-        </button>
-         
-        <button
-          className="red-bg Button-s1cqxo1l-0 jGLFQZ"
-          color="default"
-          onClick={[Function]}
-        >
-          Clear count
-        </button>
-        <br />
-        <br />
-        <div>
-          Counter: 
-          0
-        </div>
-        <div>
-          Loading...
+          <div
+            className="col"
+          >
+            <h5>
+              Redux global state
+            </h5>
+            <button
+              className="btn btn-primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Add count
+            </button>
+             
+            <button
+              className="btn btn-outline-secondary"
+              onClick={[Function]}
+              type="button"
+            >
+              Clear count
+            </button>
+            <br />
+            <br />
+            <div>
+              Counter: 
+              0
+            </div>
+            <div>
+              Loading...
+            </div>
+          </div>
         </div>
       </div>
     </div>
