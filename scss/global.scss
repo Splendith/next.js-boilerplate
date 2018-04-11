@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('/static/fonts/Kanit-Light.ttf');
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit';
+  font-weight: normal;
+}

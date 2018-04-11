@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { addCount, clearCount } from '~/actions/counter';
 
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 
-const ModifyContainer = styled(Container)`
+const Box = styled.div`
   padding: 20px;
   background: #f5f5f5;
 `;
@@ -23,23 +23,19 @@ class Counter extends Component {
 
   render() {
     return (
-      <ModifyContainer>
-        <Row>
-          <Col>
-            <h5>Redux global state</h5>
-            <Button color="primary" onClick={this.props.addCount}>
-              Add count
-            </Button>{' '}
-            <Button outline onClick={this.props.clearCount}>
-              Clear count
-            </Button>
-            <br />
-            <br />
-            <div>Counter: {this.props.count}</div>
-            {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
-          </Col>
-        </Row>
-      </ModifyContainer>
+      <Box>
+        <h5>Redux global state</h5>
+        <Button color="primary" onClick={this.props.addCount}>
+          Add count
+        </Button>{' '}
+        <Button outline onClick={this.props.clearCount}>
+          Clear count
+        </Button>
+        <br />
+        <br />
+        <div>Counter: {this.props.count}</div>
+        {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
+      </Box>
     );
   }
 }

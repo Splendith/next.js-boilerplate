@@ -1,12 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-
 import { storiesOf } from '@storybook/react';
 
 import Counter from '~/components/Counter';
-import '~/components/layout/Global';
-
 import initStore from '~/store/';
+
+import '~/scss/global.scss';
 
 const Wrapper = () => (
   <Provider store={initStore({}, false)}>

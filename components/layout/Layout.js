@@ -5,12 +5,14 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Router from 'next/router';
 
+// Global CSS
+import '~/scss/global.scss';
+
 // NProgress
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 
 import styled from 'styled-components';
-import './Global';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();

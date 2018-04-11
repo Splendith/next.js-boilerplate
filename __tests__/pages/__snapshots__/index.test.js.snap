@@ -8,76 +8,60 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     className="Wrapper-s17x8e2k-0 jhHFlr"
   >
     <div
-      className="Wrapper-s1taabva-1 bXfdKh"
+      className="Wrapper-s1taabva-0 iVPNZX"
     >
       <div
-        className="ModifyContainer-s1taabva-0 jfDPNW container"
+        className="Box-s1taabva-1 eGPsRV"
       >
-        <div
-          className="row"
+        <h1
+          className="Title-jn44e3-0 iTtVtA"
         >
-          <div
-            className="col"
-          >
-            <h1
-              className="Title-jn44e3-0 iTtVtA"
-            >
-              Hello world!
-            </h1>
-            <div
-              className="Image-jn44e3-1 fTtOUh"
-            >
-              <img
-                alt="Smile"
-                src="test-file-stub"
-              />
-            </div>
-            <a
-              href="/test/5?queryId=8"
-              onClick={[Function]}
-            >
-              Test link with /test/5?queryId=8
-            </a>
-          </div>
+          Hello world!
+        </h1>
+        <div
+          className="Image-jn44e3-1 fTtOUh"
+        >
+          <img
+            alt="Smile"
+            src="test-file-stub"
+          />
         </div>
+        <a
+          href="/test/5?queryId=8"
+          onClick={[Function]}
+        >
+          Test link with /test/5?queryId=8
+        </a>
       </div>
       <div
-        className="ModifyContainer-s168kvmw-0 fddpNu container"
+        className="Box-s168kvmw-0 jSleo"
       >
-        <div
-          className="row"
+        <h5>
+          Redux global state
+        </h5>
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
         >
-          <div
-            className="col"
-          >
-            <h5>
-              Redux global state
-            </h5>
-            <button
-              className="btn btn-primary"
-              onClick={[Function]}
-              type="button"
-            >
-              Add count
-            </button>
-             
-            <button
-              className="btn btn-outline-secondary"
-              onClick={[Function]}
-              type="button"
-            >
-              Clear count
-            </button>
-            <br />
-            <br />
-            <div>
-              Counter: 
-              0
-            </div>
-            <div>
-              Loading...
-            </div>
-          </div>
+          Add count
+        </button>
+         
+        <button
+          className="btn btn-outline-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Clear count
+        </button>
+        <br />
+        <br />
+        <div>
+          Counter: 
+          0
+        </div>
+        <div>
+          Loading...
         </div>
       </div>
     </div>
