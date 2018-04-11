@@ -8,10 +8,10 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     className="Wrapper-s17x8e2k-0 jhHFlr"
   >
     <div
-      className="Wrapper-s1taabva-0 iVPNZX"
+      className="Wrapper-s1taabva-1 bXfdKh"
     >
       <div
-        className="s3q1xxi-0-Container-gZqETv eMhdke"
+        className="Box-s1taabva-0 jKOgfF"
       >
         <h1
           className="Title-jn44e3-0 iTtVtA"
@@ -34,25 +34,63 @@ exports[`With Snapshot Testing full snapshot 1`] = `
         </a>
       </div>
       <div
-        className="s3q1xxi-0-Container-gZqETv cAZKnA"
+        className="Box-s168kvmw-0 jSleo"
       >
         <h3>
           Redux global state
         </h3>
         <button
-          className="Button-s1cqxo1l-0 dexqqJ"
-          color="primary"
+          className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6 MuiButton-raisedPrimary-8"
+          disabled={false}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
-          Add count
+          <span
+            className="MuiButton-label-2"
+          >
+            Add count
+          </span>
+          <span
+            className="MuiTouchRipple-root-19"
+          />
         </button>
          
         <button
-          className="red-bg Button-s1cqxo1l-0 jGLFQZ"
-          color="default"
+          className="MuiButtonBase-root-16 MuiButton-root-1 MuiButton-raised-6"
+          disabled={false}
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
-          Clear count
+          <span
+            className="MuiButton-label-2"
+          >
+            Clear count
+          </span>
+          <span
+            className="MuiTouchRipple-root-19"
+          />
         </button>
         <br />
         <br />

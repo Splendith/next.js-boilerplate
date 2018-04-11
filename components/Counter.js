@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addCount, clearCount } from '~/actions/counter';
 
-import { Container } from '~/components/ui';
+import styled from 'styled-components';
 import Button from 'material-ui/Button';
 
-const ModifyContainer = Container.extend`
+const Box = styled.div`
+  padding: 20px;
   background: #f5f5f5;
 `;
 
@@ -22,7 +23,7 @@ class Counter extends Component {
 
   render() {
     return (
-      <ModifyContainer>
+      <Box>
         <h3>Redux global state</h3>
         <Button variant="raised" color="primary" onClick={this.props.addCount}>
           Add count
@@ -34,7 +35,7 @@ class Counter extends Component {
         <br />
         <div>Counter: {this.props.count}</div>
         {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
-      </ModifyContainer>
+      </Box>
     );
   }
 }
