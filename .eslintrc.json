@@ -5,6 +5,7 @@
     "node": true,
     "jest": true
   },
+  "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "max-len": "warn",
