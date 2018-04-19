@@ -1,15 +1,12 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-import dynamic from 'next/dynamic';
 
 import withRedux from 'next-redux-wrapper';
 import initStore from '~/store/';
 import { Link } from '~/routes';
 
 import Layout from '~/components/layout/Layout';
-
-// Dynamic import
-const CounterPage = dynamic(import('../components/CounterPage'));
+import CounterPage from '~/components/CounterPage';
 
 const TestUrl = props => (
   <Layout>

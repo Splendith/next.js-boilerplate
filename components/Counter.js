@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { addCount, clearCount } from '~/actions/counter';
-
 import { Button } from 'reactstrap';
+
+import { addCount, clearCount } from '~/actions/counter';
 
 const Box = styled.div`
   padding: 20px;
