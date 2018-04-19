@@ -71,7 +71,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
 <Layout>
-  <DynamicComponent>
+  <CounterPage>
     <SideEffect(Head)>
       <title>
         Hello world!
@@ -93,6 +93,6 @@ exports[`With Snapshot Testing shallow snapshot 1`] = `
         Test link with /test/5?queryId=8
       </a>
     </LinkRoutes>
-  </DynamicComponent>
+  </CounterPage>
 </Layout>
 `;
