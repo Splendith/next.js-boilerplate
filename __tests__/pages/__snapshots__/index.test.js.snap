@@ -70,29 +70,27 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 `;
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
-<Layout>
-  <CounterPage>
-    <SideEffect(Head)>
-      <title>
-        Hello world!
-      </title>
-    </SideEffect(Head)>
-    <Title>
+<CounterPage>
+  <SideEffect(Head)>
+    <title>
       Hello world!
-    </Title>
-    <Image>
-      <img
-        alt="Smile"
-        src="test-file-stub"
-      />
-    </Image>
-    <LinkRoutes
-      route="/test/5?queryId=8"
-    >
-      <a>
-        Test link with /test/5?queryId=8
-      </a>
-    </LinkRoutes>
-  </CounterPage>
-</Layout>
+    </title>
+  </SideEffect(Head)>
+  <Title>
+    Hello world!
+  </Title>
+  <Image>
+    <img
+      alt="Smile"
+      src="test-file-stub"
+    />
+  </Image>
+  <LinkRoutes
+    route="/test/5?queryId=8"
+  >
+    <a>
+      Test link with /test/5?queryId=8
+    </a>
+  </LinkRoutes>
+</CounterPage>
 `;

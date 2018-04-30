@@ -1,11 +1,7 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-
-import withRedux from 'next-redux-wrapper';
-import initStore from '~/store/';
 import { Link } from '~/routes';
 
-import Layout from '~/components/layout/Layout';
 import CounterPage from '~/components/CounterPage';
 
 // Sample ES6 import
@@ -20,20 +16,18 @@ const Image = styled.div`
 `;
 
 export const Index = () => (
-  <Layout>
-    <CounterPage>
-      <Head>
-        <title>Hello world!</title>
-      </Head>
-      <Title>Hello world!</Title>
-      <Image>
-        <img src={smile} alt="Smile" />
-      </Image>
-      <Link route="/test/5?queryId=8">
-        <a>Test link with /test/5?queryId=8</a>
-      </Link>
-    </CounterPage>
-  </Layout>
+  <CounterPage>
+    <Head>
+      <title>Hello world!</title>
+    </Head>
+    <Title>Hello world!</Title>
+    <Image>
+      <img src={smile} alt="Smile" />
+    </Image>
+    <Link route="/test/5?queryId=8">
+      <a>Test link with /test/5?queryId=8</a>
+    </Link>
+  </CounterPage>
 );
 
-export default withRedux(initStore)(Index);
+export default Index;
