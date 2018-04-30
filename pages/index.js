@@ -15,7 +15,7 @@ const Image = styled.div`
   margin-bottom: 2rem;
 `;
 
-export const Index = () => (
+const Index = () => (
   <CounterPage>
     <Head>
       <title>Hello world!</title>

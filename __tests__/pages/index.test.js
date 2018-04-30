@@ -5,7 +5,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import App, { Index } from '~/pages/index';
+import App from '~/pages/_app';
+import Index from '~/pages/index';
 
 describe('With Enzyme', () => {
   it('should shows "Hello world!"', () => {
@@ -25,7 +26,7 @@ describe('With Snapshot Testing', () => {
     expect(snapshot).toMatchSnapshot();
   });
   it('full snapshot', () => {
-    const component = renderer.create(<App />);
+    const component = renderer.create(<App Component={Index} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
