@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Link } from '~/routes';
 
@@ -24,4 +25,4 @@ TestUrl.propTypes = {
   router: PropTypes.shape().isRequired,
 };
 
-export default TestUrl;
+export default withRouter(TestUrl);
