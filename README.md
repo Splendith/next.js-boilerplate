@@ -4,7 +4,7 @@ My Next.js Boilerplate
 
 ## Includes
 
-### 1. [Next.js](https://github.com/zeit/next.js) framework
+### 1. [Next.js](https://github.com/zeit/next.js) v6
 
 Fully Integrates with
 
@@ -26,6 +26,6 @@ Fully Integrates with
 
 * [axios](https://github.com/axios/axios)
 * [cross-env](https://github.com/kentcdodds/cross-env)
-* [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
+* [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 
 \*\* May not compatible with Next.js hot reloading
