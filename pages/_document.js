@@ -9,10 +9,11 @@ export default class MyDocument extends Document {
     return { ...page, styleTags };
   }
   render() {
+    const { css } = this.props.buildManifest;
     return (
       <html>
         <Head>
-          <link rel="stylesheet" href="/_next/static/style.css" />
+          {css.map(file => <link rel="stylesheet" href={`/_next/${file}`} key={file} />)}
           {this.props.styleTags}
         </Head>
         <body>
