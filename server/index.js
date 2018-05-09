@@ -1,6 +1,8 @@
 const express = require('express');
 const next = require('next');
 
+const port = 8080;
+
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -17,9 +19,9 @@ app
 
     server.get('*', (req, res) => handle(req, res));
 
-    server.listen(8080, (err) => {
+    server.listen(port, (err) => {
       if (err) throw err;
-      console.log('> Ready on http://localhost:8080');
+      console.log(`> Ready on http://localhost:${port}`);
     });
   })
   .catch((ex) => {
