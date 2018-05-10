@@ -4,10 +4,17 @@ const withCSS = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
 const withImages = require('./.next_config/load-images');
 const withFonts = require('./.next_config/load-fonts');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const { ANALYZE } = process.env;
+const PRODUCTION = process.env.NODE_ENV === 'production';
+
+const extractCSSPlugin = new ExtractTextPlugin({
+  filename: 'static/style-[contenthash].css',
+});
 
 module.exports = withFonts(withImages(withSass(withCSS({
+  extractCSSPlugin: PRODUCTION ? extractCSSPlugin : undefined,
   webpack: (configParam, { isServer }) => {
     let config = configParam;
 
@@ -26,6 +33,9 @@ module.exports = withFonts(withImages(withSass(withCSS({
         analyzerPort: isServer ? 8888 : 8889,
         openAnalyzer: true,
       }));
+    }
+    if (PRODUCTION) {
+      config.plugins.push(extractCSSPlugin);
     }
 
     return config;
