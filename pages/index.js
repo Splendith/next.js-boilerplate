@@ -25,7 +25,11 @@ const Index = () => (
       <img src={smile} alt="Smile" />
     </Image>
     <Link route="/test/5?queryId=8">
-      <a>Test link with /test/5?queryId=8</a>
+      <a>route=&ldquo;/test/5?queryId=8&ldquo;</a>
+    </Link>
+    <br />
+    <Link route="testurl" params={{ id: 7, queryId: 9 }}>
+      <a>route=&ldquo;testurl&ldquo; params=&#123;&#123; id: 7, queryId: 9 &#125;&#125;</a>
     </Link>
   </CounterPage>
 );

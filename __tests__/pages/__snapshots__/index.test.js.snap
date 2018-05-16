@@ -30,7 +30,14 @@ exports[`With Snapshot Testing full snapshot 1`] = `
           href="/test/5?queryId=8"
           onClick={[Function]}
         >
-          Test link with /test/5?queryId=8
+          route=“/test/5?queryId=8“
+        </a>
+        <br />
+        <a
+          href="/test/7?queryId=9"
+          onClick={[Function]}
+        >
+          route=“testurl“ params={{ id: 7, queryId: 9 }}
         </a>
       </div>
       <div
@@ -89,7 +96,21 @@ exports[`With Snapshot Testing shallow snapshot 1`] = `
     route="/test/5?queryId=8"
   >
     <a>
-      Test link with /test/5?queryId=8
+      route=“/test/5?queryId=8“
+    </a>
+  </LinkRoutes>
+  <br />
+  <LinkRoutes
+    params={
+      Object {
+        "id": 7,
+        "queryId": 9,
+      }
+    }
+    route="testurl"
+  >
+    <a>
+      route=“testurl“ params={{ id: 7, queryId: 9 }}
     </a>
   </LinkRoutes>
 </CounterPage>
