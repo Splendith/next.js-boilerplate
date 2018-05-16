@@ -12,7 +12,7 @@ Fully Integrates with
 * [Redux Thunk](https://github.com/gaearon/redux-thunk)
 * [Redux Persist](https://github.com/rt2zz/redux-persist)
 * Client routes ( using [next-routes](https://github.com/fridays/next-routes) )
-* Server routes ( using [express](https://github.com/expressjs/express) )
+* Server routes ( using [next-routes](https://github.com/fridays/next-routes) / [express](https://github.com/expressjs/express) )
 * [Styled Components](https://github.com/styled-components/styled-components)
 * CSS / fonts / images ES6 import \*\*
 * [NProgress](https://github.com/rstacruz/nprogress)
