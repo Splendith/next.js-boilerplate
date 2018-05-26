@@ -1536,13 +1536,14 @@ babel-jest@^23.0.0:
     babel-plugin-istanbul "^4.1.6"
     babel-preset-jest "^23.0.0"
 
-babel-loader@8.0.0-beta.2:
-  version "8.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.0-beta.2.tgz#4d5b67c964dc8c9cba866fd13d6b90df3acf8723"
+babel-loader@8.0.0-beta.3:
+  version "8.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.0-beta.3.tgz#49efeea6e8058d5af860a18a6de88b8c1450645b"
   dependencies:
     find-cache-dir "^1.0.0"
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
+    util.promisify "^1.0.0"
 
 babel-loader@^7.1.4:
   version "7.1.4"
@@ -6467,9 +6468,9 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
-next@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/next/-/next-6.0.3.tgz#b759fde2ec4864f92116cee4fcd805aaf285136c"
+next@^6.0.4-canary.1:
+  version "6.0.4-canary.1"
+  resolved "https://registry.yarnpkg.com/next/-/next-6.0.4-canary.1.tgz#83739863cf3c217a78a007dd0ee71a68f9202cda"
   dependencies:
     "@babel/core" "7.0.0-beta.42"
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.42"
@@ -6483,7 +6484,7 @@ next@^6.0.3:
     "@babel/template" "7.0.0-beta.42"
     ansi-html "0.0.7"
     babel-core "7.0.0-bridge.0"
-    babel-loader "8.0.0-beta.2"
+    babel-loader "8.0.0-beta.3"
     babel-plugin-react-require "3.0.0"
     babel-plugin-transform-react-remove-prop-types "0.4.13"
     case-sensitive-paths-webpack-plugin "2.1.1"
