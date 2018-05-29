@@ -7,7 +7,7 @@ import { Link } from '~/routes';
 import smile from './img/smile.png';
 
 // Dynamic import
-const CounterPage = dynamic(import('../components/CounterPage'));
+const CounterPage = dynamic(import('~/components/CounterPage'));
 
 const Title = styled.h1`
   font-size: 2.2rem;

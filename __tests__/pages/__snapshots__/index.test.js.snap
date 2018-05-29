@@ -77,7 +77,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 `;
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
-<CounterPage>
+<DynamicComponent>
   <SideEffect(Head)>
     <title>
       Hello world!
@@ -113,5 +113,5 @@ exports[`With Snapshot Testing shallow snapshot 1`] = `
       route=“testurl“ params={{ id: 7, queryId: 9 }}
     </a>
   </LinkRoutes>
-</CounterPage>
+</DynamicComponent>
 `;

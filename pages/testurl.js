@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Link } from '~/routes';
 
 // Dynamic import
-const CounterPage = dynamic(import('../components/CounterPage'));
+const CounterPage = dynamic(import('~/components/CounterPage'));
 
 const TestUrl = props => (
   <CounterPage>
