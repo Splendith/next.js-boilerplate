@@ -1,9 +1,11 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Link } from '~/routes';
 
-import CounterPage from '~/components/CounterPage';
+// Dynamic import
+const CounterPage = dynamic(import('../components/CounterPage'));
 
 const TestUrl = props => (
   <CounterPage>

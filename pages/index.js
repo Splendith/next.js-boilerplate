@@ -1,11 +1,13 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { Link } from '~/routes';
 
-import CounterPage from '~/components/CounterPage';
-
 // Sample ES6 import
 import smile from './img/smile.png';
+
+// Dynamic import
+const CounterPage = dynamic(import('../components/CounterPage'));
 
 const Title = styled.h1`
   font-size: 2.2rem;
