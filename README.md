@@ -29,5 +29,3 @@ Fully Integrates with
 * [axios](https://github.com/axios/axios)
 * [cross-env](https://github.com/kentcdodds/cross-env)
 * [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
-
-\*\* May not compatible with Next.js hot reloading
