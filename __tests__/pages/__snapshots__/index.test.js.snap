@@ -14,12 +14,12 @@ exports[`With Snapshot Testing full snapshot 1`] = `
         className="Box-s1taabva-1 eGPsRV"
       >
         <h1
-          className="Title-jn44e3-0 iTtVtA"
+          className="Title-s18vobdc-0 dkyFEa"
         >
           Hello world!
         </h1>
         <div
-          className="Image-jn44e3-1 fTtOUh"
+          className="Image-jn44e3-0 hvdTEA"
         >
           <img
             alt="Smile"

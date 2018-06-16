@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 import Counter from '~/components/Counter';
 import initStore from '~/store/';
 
-import '~/scss/global.scss';
+import '~/style/scss/style.scss';
 
 const Wrapper = () => (
   <Provider store={initStore({}, false)}>

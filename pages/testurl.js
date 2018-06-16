@@ -4,6 +4,9 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Link } from '~/routes';
 
+// Styled component element
+import Title from '~/components/elements/Title';
+
 // Dynamic import
 const CounterPage = dynamic(import('~/components/CounterPage'));
 
@@ -12,7 +15,7 @@ const TestUrl = props => (
     <Head>
       <title>Test URL</title>
     </Head>
-    <h2>URL Result</h2>
+    <Title>URL Result</Title>
     <div>
       ID: {props.router.query.id}, Query ID: {props.router.query.queryId}
     </div>

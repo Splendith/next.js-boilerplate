@@ -9,10 +9,11 @@ import Router from 'next/router';
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import DefaultTheme from '~/style/themes/Default';
 
 // Global CSS
-import '~/scss/global.scss';
+import '~/style/scss/style.scss';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -32,12 +33,14 @@ const Wrapper = styled.div`
 `;
 
 const Layout = props => (
-  <div className="root">
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    </Head>
-    <Wrapper>{props.children}</Wrapper>
-  </div>
+  <ThemeProvider theme={DefaultTheme}>
+    <div className="root">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      </Head>
+      <Wrapper>{props.children}</Wrapper>
+    </div>
+  </ThemeProvider>
 );
 
 Layout.propTypes = {

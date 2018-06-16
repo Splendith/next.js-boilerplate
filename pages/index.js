@@ -3,15 +3,14 @@ import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { Link } from '~/routes';
 
+// Styled component element
+import Title from '~/components/elements/Title';
+
 // Sample ES6 import
 import smile from './img/smile.png';
 
 // Dynamic import
 const CounterPage = dynamic(import('~/components/CounterPage'));
-
-const Title = styled.h1`
-  font-size: 2.2rem;
-`;
 
 const Image = styled.div`
   margin-bottom: 2rem;
