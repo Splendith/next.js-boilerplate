@@ -5,7 +5,7 @@ import theme from '../scss/_variables.scss';
 
 const Default = {
   ...theme,
-  headerColor: theme.primary, // Get value from bootstrap variables ( $primary )
+  headerColor: theme.primary, // Get value from /style/_variables.scss ( $primary )
 };
 
 export default Default;
