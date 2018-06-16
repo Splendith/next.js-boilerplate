@@ -9,11 +9,12 @@ import Router from 'next/router';
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';
 
-import styled, { ThemeProvider } from 'styled-components';
-import DefaultTheme from '~/style/themes/Default';
-
 // Global CSS
 import '~/style/scss/style.scss';
+
+// Styled Component
+import styled, { ThemeProvider } from 'styled-components';
+import DefaultTheme from '~/style/themes/Default';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
