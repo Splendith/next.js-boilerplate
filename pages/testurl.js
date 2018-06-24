@@ -10,14 +10,14 @@ import Title from '~/components/elements/Title';
 // Dynamic import
 const CounterPage = dynamic(import('~/components/CounterPage'));
 
-const TestUrl = props => (
+const TestUrl = ({ router }) => (
   <CounterPage>
     <Head>
       <title>Test URL</title>
     </Head>
     <Title>URL Result</Title>
     <div>
-      ID: {props.router.query.id}, Query ID: {props.router.query.queryId}
+      ID: {router.query.id}, Query ID: {router.query.queryId}
     </div>
     <br />
     <Link route="/">

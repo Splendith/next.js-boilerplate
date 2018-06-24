@@ -10,6 +10,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "max-len": "warn",
     "no-unused-vars": "warn",
+    "react/destructuring-assignment": "warn",
     "class-methods-use-this": "off",
     "func-names": "off",
     "import/no-extraneous-dependencies": "off",
@@ -17,7 +18,8 @@
     "no-unused-expressions": "off",
     "jsx-a11y/html-has-lang": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-one-expression-per-line": "off"
   },
   "settings": {
     "import/resolver": {

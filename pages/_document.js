@@ -8,6 +8,7 @@ export default class MyDocument extends Document {
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags };
   }
+
   render() {
     const { css } = this.props.buildManifest;
     return (

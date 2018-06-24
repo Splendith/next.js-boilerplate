@@ -18,23 +18,27 @@ class Counter extends Component {
   }
 
   renderContent() {
-    return <div>Counter (persist): {this.props.countPersist}</div>;
+    const { countPersist } = this.props;
+    return <div>Counter (persist): {countPersist}</div>;
   }
 
   render() {
+    const {
+      addCountAction, clearCountAction, count, status,
+    } = this.props;
     return (
       <Box>
         <h5>Redux global state</h5>
-        <Button color="primary" onClick={this.props.addCount}>
+        <Button color="primary" onClick={addCountAction}>
           Add count
         </Button>{' '}
-        <Button outline onClick={this.props.clearCount}>
+        <Button outline onClick={clearCountAction}>
           Clear count
         </Button>
         <br />
         <br />
-        <div>Counter: {this.props.count}</div>
-        {!this.props.status.loaded ? this.renderLoading() : this.renderContent()}
+        <div>Counter: {count}</div>
+        {!status.loaded ? this.renderLoading() : this.renderContent()}
       </Box>
     );
   }
@@ -44,8 +48,8 @@ Counter.propTypes = {
   status: PropTypes.shape().isRequired,
   count: PropTypes.number.isRequired,
   countPersist: PropTypes.number.isRequired,
-  addCount: PropTypes.func.isRequired,
-  clearCount: PropTypes.func.isRequired,
+  addCountAction: PropTypes.func.isRequired,
+  clearCountAction: PropTypes.func.isRequired,
 };
 
 function mapStateToProps(state) {
@@ -57,7 +61,10 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps() {
-  return { addCount, clearCount };
+  return { addCountAction: addCount, clearCountAction: clearCount };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps())(Counter);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps(),
+)(Counter);

@@ -33,13 +33,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const Layout = props => (
+const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <div className="root">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </Head>
-      <Wrapper>{props.children}</Wrapper>
+      <Wrapper>{children}</Wrapper>
     </div>
   </ThemeProvider>
 );

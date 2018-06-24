@@ -1,11 +1,11 @@
 const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const withCSS = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
 const withImages = require('./.next_config/load-images');
 const withFonts = require('./.next_config/load-fonts');
 const withSassVars = require('./.next_config/load-sass-variables');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const { ANALYZE } = process.env;
 const PRODUCTION = process.env.NODE_ENV === 'production';

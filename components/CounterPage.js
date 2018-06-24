@@ -13,11 +13,9 @@ const Box = styled.div`
   text-align: center;
 `;
 
-const CounterPage = props => (
+const CounterPage = ({ children }) => (
   <Wrapper>
-    <Box>
-      {props.children}
-    </Box>
+    <Box>{children}</Box>
     <Counter />
   </Wrapper>
 );
