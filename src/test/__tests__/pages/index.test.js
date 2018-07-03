@@ -26,6 +26,7 @@ describe('With Snapshot Testing', () => {
     expect(snapshot).toMatchSnapshot();
   });
   it('full snapshot', () => {
+    console.log((<App Component={Index} />));
     const component = renderer.create(<App Component={Index} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

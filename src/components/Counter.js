@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
 
-import { addCount, clearCount } from '~/actions/counter';
+import { addCount, clearCount } from '@/actions/counter';
 
 const Box = styled.div`
   padding: 20px;

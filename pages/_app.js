@@ -2,9 +2,9 @@ import App, { Container } from 'next/app';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import withRedux from 'next-redux-wrapper';
-import initStore from '~/store/';
+import initStore from '@/store/';
 
-import Layout from '~/components/layout/Layout';
+import Layout from '@/components/layout/Layout';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {

@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import { Link } from '~/routes';
 
 // Styled component element
-import Title from '~/components/elements/Title';
+import Title from '@/components/elements/Title';
 
 // Dynamic import
-const CounterPage = dynamic(import('~/components/CounterPage'));
+const CounterPage = dynamic(import('@/components/CounterPage'));
 
 const TestUrl = ({ router }) => (
   <CounterPage>
