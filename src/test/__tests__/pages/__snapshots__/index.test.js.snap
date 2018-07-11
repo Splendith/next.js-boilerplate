@@ -2,75 +2,67 @@
 
 exports[`With Snapshot Testing full snapshot 1`] = `
 <div
-  className="root"
+  className="Wrapper-s1axzgde-0 kPxIFX"
 >
   <div
-    className="Wrapper-s17x8e2k-0 jhHFlr"
+    className="Box-s1axzgde-1 cCmipH"
   >
-    <div
-      className="Wrapper-s1taabva-0 iVPNZX"
+    <h1
+      className="Title-s1g21ci3-0 kNqbZE"
     >
-      <div
-        className="Box-s1taabva-1 eGPsRV"
-      >
-        <h1
-          className="Title-s18vobdc-0 dkyFEa"
-        >
-          Hello world!
-        </h1>
-        <div
-          className="Image-jn44e3-0 hvdTEA"
-        >
-          <img
-            alt="Smile"
-            src="test-file-stub"
-          />
-        </div>
-        <a
-          href="/test/5?queryId=8"
-          onClick={[Function]}
-        >
-          route=“/test/5?queryId=8“
-        </a>
-        <br />
-        <a
-          href="/test/7?queryId=9"
-          onClick={[Function]}
-        >
-          route=“testurl“ params={{ id: 7, queryId: 9 }}
-        </a>
-      </div>
-      <div
-        className="Box-s168kvmw-0 jSleo"
-      >
-        <h5>
-          Redux global state
-        </h5>
-        <button
-          className="btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Add count
-        </button>
-         
-        <button
-          className="btn btn-outline-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Clear count
-        </button>
-        <br />
-        <br />
-        <div>
-          Counter: 
-          0
-        </div>
-        <div>
-          Loading...
-        </div>
-      </div>
+      Hello world!
+    </h1>
+    <div
+      className="Image-jn44e3-0 hvdTEA"
+    >
+      <img
+        alt="Smile"
+        src="test-file-stub"
+      />
+    </div>
+    <a
+      href="/test/5?queryId=8"
+      onClick={[Function]}
+    >
+      route=“/test/5?queryId=8“
+    </a>
+    <br />
+    <a
+      href="/test/7?queryId=9"
+      onClick={[Function]}
+    >
+      route=“testurl“ params={{ id: 7, queryId: 9 }}
+    </a>
+  </div>
+  <div
+    className="Box-s68600l-0 lgiuOW"
+  >
+    <h5>
+      Redux global state
+    </h5>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Add count
+    </button>
+     
+    <button
+      className="btn btn-outline-secondary"
+      onClick={[Function]}
+      type="button"
+    >
+      Clear count
+    </button>
+    <br />
+    <br />
+    <div>
+      Counter: 
+      0
+    </div>
+    <div>
+      Loading...
     </div>
   </div>
 </div>

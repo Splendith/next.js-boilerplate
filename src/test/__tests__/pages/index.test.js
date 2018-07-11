@@ -5,17 +5,19 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import App from '~/pages/_app';
 import Index from '~/pages/index';
+import ReduxWrapper from '../ReduxWrapper';
 
 describe('With Enzyme', () => {
   it('should shows "Hello world!"', () => {
     const app = shallow(<Index />);
 
-    expect(app
-      .find('Title')
-      .children()
-      .text()).toEqual('Hello world!');
+    expect(
+      app
+        .find('Title')
+        .children()
+        .text(),
+    ).toEqual('Hello world!');
   });
 });
 
@@ -26,8 +28,7 @@ describe('With Snapshot Testing', () => {
     expect(snapshot).toMatchSnapshot();
   });
   it('full snapshot', () => {
-    console.log((<App Component={Index} />));
-    const component = renderer.create(<App Component={Index} />);
+    const component = renderer.create(<ReduxWrapper><Index /></ReduxWrapper>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
