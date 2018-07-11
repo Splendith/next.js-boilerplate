@@ -5,8 +5,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
+import ReduxWrapper from '@/test/components/ReduxWrapper';
 import Index from '~/pages/index';
-import ReduxWrapper from '../ReduxWrapper';
 
 describe('With Enzyme', () => {
   it('should shows "Hello world!"', () => {
