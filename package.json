@@ -1,6 +1,6 @@
 {
   "name": "next.js-boilerplate",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "repository": "git@github.com:Splendith/next.js-boilerplate.git",
   "author": "Kunuch Chutmongkolporn <kunuch@gmail.com>",
   "license": "MIT",
@@ -51,7 +51,7 @@
     "cross-env": "^5.2.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^5.1.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-import-resolver-babel-module": "^5.0.0-beta.0",
     "eslint-plugin-import": "^2.13.0",
