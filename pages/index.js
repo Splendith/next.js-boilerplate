@@ -7,7 +7,7 @@ import { Link } from '~/routes';
 import Title from '@/components/elements/Title';
 
 // Sample ES6 import
-import smile from './img/smile.png';
+import smile from '~/static/img/smile.png';
 
 // Dynamic import
 const CounterPage = dynamic(import('@/components/CounterPage'));
