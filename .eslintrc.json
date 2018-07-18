@@ -23,12 +23,7 @@
   },
   "settings": {
     "import/resolver": {
-      "babel-module": {
-        "root": ["./"],
-        "alias": {
-          "~": "./"
-        }
-      }
+      "babel-module": {}
     }
   }
 }
