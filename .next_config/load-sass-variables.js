@@ -9,7 +9,7 @@ module.exports = (nextConfig = {}) =>
 
       config.module.rules.push({
         test: /\.scss$/,
-        include: [path.resolve(__dirname, '../style/scss/_variables.scss')],
+        include: [path.resolve(__dirname, '../src/style/scss/_variables.scss')],
         use: {
           loader: 'sass-extract-loader',
           options: {
