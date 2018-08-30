@@ -14,6 +14,7 @@ import '@/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
+import Media from '@/styles/utils/Media';
 import DefaultTheme from '@/styles/themes/Default';
 
 Router.onRouteChangeStart = () => {
@@ -27,10 +28,10 @@ const Wrapper = styled.div`
   padding: 10px;
   margin: auto;
 
-  @media (min-width: 480px) {
+  ${Media.sm`
     width: 400px;
     padding: 40px 10px;
-  }
+  `};
 `;
 
 const Layout = ({ children }) => (
