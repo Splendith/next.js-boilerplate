@@ -14,6 +14,7 @@ Fully Integrates with
 * Client routes ( using [next-routes](https://github.com/fridays/next-routes) )
 * Server routes ( using [next-routes](https://github.com/fridays/next-routes) / [express](https://github.com/expressjs/express) )
 * [Styled Components](https://github.com/styled-components/styled-components)
+* [polished](https://github.com/styled-components/polished)
 * [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 * CSS / fonts / images ES6 import
 * [NProgress](https://github.com/rstacruz/nprogress)

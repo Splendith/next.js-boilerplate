@@ -6,10 +6,11 @@ import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
 
 import { addCount, clearCount } from '@/actions/counter';
+import { darken } from 'polished';
 
 const Box = styled.div`
   padding: 20px;
-  background: #f5f5f5;
+  background: ${darken(0.04, '#fff')};
 `;
 
 class Counter extends Component {
