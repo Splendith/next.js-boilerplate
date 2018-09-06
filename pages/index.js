@@ -10,7 +10,8 @@ import Title from '@/components/elements/Title';
 import smile from '~/static/img/smile.png';
 
 // Dynamic import
-const CounterPage = dynamic(import('@/components/CounterPage'));
+import CounterPage from '@/components/CounterPage';
+// const CounterPage = dynamic(import('@/components/CounterPage'));
 
 const Image = styled.div`
   margin-bottom: 2rem;

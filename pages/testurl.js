@@ -8,7 +8,8 @@ import { Link } from '~/routes';
 import Title from '@/components/elements/Title';
 
 // Dynamic import
-const CounterPage = dynamic(import('@/components/CounterPage'));
+import CounterPage from '@/components/CounterPage';
+// const CounterPage = dynamic(import('@/components/CounterPage'));
 
 const TestUrl = ({ router }) => (
   <CounterPage>
