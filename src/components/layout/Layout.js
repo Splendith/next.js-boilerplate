@@ -7,6 +7,7 @@ import Router from 'next/router';
 
 // NProgress
 import 'nprogress/nprogress.css';
+import '@/styles/scss/nprogress.scss';
 import NProgress from 'nprogress';
 
 // Global CSS
@@ -18,6 +19,7 @@ import Media from '@/styles/utils/Media';
 import DefaultTheme from '@/styles/themes/Default';
 
 Router.onRouteChangeStart = () => {
+  NProgress.configure({ showSpinner: false });
   NProgress.start();
 };
 Router.onRouteChangeComplete = () => NProgress.done();
