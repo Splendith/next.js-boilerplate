@@ -2,13 +2,13 @@
 
 exports[`With Snapshot Testing full snapshot 1`] = `
 <div
-  className="Wrapper-s1axzgde-0 kPxIFX"
+  className="Wrapper-sc-1axzgde-0 eajKZs"
 >
   <div
-    className="Box-s1axzgde-1 cCmipH"
+    className="Box-sc-1axzgde-1 eDkwhl"
   >
     <h1
-      className="Title-s1g21ci3-0 kNqbZE"
+      className="Title-sc-1g21ci3-0 hTAgCE"
     >
       Hello world!
     </h1>
