@@ -1,3 +1,5 @@
+import React from 'react';
+
 // PropTypes
 import PropTypes from 'prop-types';
 
@@ -38,7 +40,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
-    <div className="root">
+    <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </Head>

@@ -28,7 +28,11 @@ describe('With Snapshot Testing', () => {
     expect(snapshot).toMatchSnapshot();
   });
   it('full snapshot', () => {
-    const component = renderer.create(<ReduxWrapper><Index /></ReduxWrapper>);
+    const component = renderer.create(
+      <ReduxWrapper>
+        <Index />
+      </ReduxWrapper>,
+    );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

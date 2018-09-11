@@ -14,6 +14,7 @@ const Box = styled.div`
 `;
 
 class Counter extends Component {
+  // eslint-disable-next-line class-methods-use-this
   renderLoading() {
     return <div>Loading...</div>;
   }
@@ -24,9 +25,7 @@ class Counter extends Component {
   }
 
   render() {
-    const {
-      addCountAction, clearCountAction, count, status,
-    } = this.props;
+    const { addCountAction, clearCountAction, count, status } = this.props;
     return (
       <Box>
         <h5>Redux global state</h5>

@@ -1,5 +1,6 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
   "env": {
     "browser": true,
     "node": true,
@@ -7,19 +8,29 @@
   },
   "parser": "babel-eslint",
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "max-len": "warn",
-    "no-unused-vars": "warn",
-    "react/destructuring-assignment": "warn",
-    "class-methods-use-this": "off",
-    "func-names": "off",
-    "import/no-extraneous-dependencies": "off",
-    "no-console": "off",
-    "no-unused-expressions": "off",
-    "jsx-a11y/html-has-lang": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "func-names": ["error", "as-needed"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.jsx",
+          "**/*.config.js",
+          "**/*.setup.js",
+          ".storybook/**",
+          "stories/**"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["route"],
+        "aspects": ["preferButton"]
+      }
+    ],
+    "prettier/prettier": "error"
   },
   "settings": {
     "import/resolver": {

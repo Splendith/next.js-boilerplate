@@ -2,18 +2,18 @@
 
 exports[`With Snapshot Testing full snapshot 1`] = `
 <div
-  className="Wrapper-sc-1axzgde-0 eajKZs"
+  className="Wrapper-sc-1v2z7vs-0 dnIgmU"
 >
   <div
-    className="Box-sc-1axzgde-1 eDkwhl"
+    className="Box-sc-1v2z7vs-1 dkGnjF"
   >
     <h1
-      className="Title-sc-1g21ci3-0 hTAgCE"
+      className="Title-sc-1w6841p-0 fJFdOl"
     >
       Hello world!
     </h1>
     <div
-      className="Image-jn44e3-0 hvdTEA"
+      className="Image-sc-11t8wqi-0 jeDhTs"
     >
       <img
         alt="Smile"
@@ -35,7 +35,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     </a>
   </div>
   <div
-    className="Box-sc-68600l-0 flGqvX"
+    className="Box-p23pin-0 dpFhYK"
   >
     <h5>
       Redux global state

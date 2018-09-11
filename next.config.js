@@ -3,9 +3,9 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const withCSS = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
-const withImages = require('./.next_config/load-images');
-const withFonts = require('./.next_config/load-fonts');
-const withSassVars = require('./.next_config/load-sass-variables');
+const withImages = require('./.next_config/load-images.config');
+const withFonts = require('./.next_config/load-fonts.config');
+const withSassVars = require('./.next_config/load-sass-variables.config');
 
 const { ANALYZE } = process.env;
 const PRODUCTION = process.env.NODE_ENV === 'production';
@@ -14,31 +14,41 @@ const extractCSSPlugin = new ExtractTextPlugin({
   filename: 'static/style-[contenthash].css',
 });
 
-module.exports = withFonts(withImages(withSassVars(withSass(withCSS({
-  extractCSSPlugin: PRODUCTION ? extractCSSPlugin : undefined,
-  webpack: (configParam, { isServer }) => {
-    let config = configParam;
+module.exports = withFonts(
+  withImages(
+    withSassVars(
+      withSass(
+        withCSS({
+          extractCSSPlugin: PRODUCTION ? extractCSSPlugin : undefined,
+          webpack: (configParam, { isServer }) => {
+            let config = configParam;
 
-    if (!isServer) {
-      config = commonsChunkConfig(config, /\.(sass|scss|css)$/);
-    }
+            if (!isServer) {
+              config = commonsChunkConfig(config, /\.(sass|scss|css)$/);
+            }
 
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: 'empty',
-    };
+            // Fixes npm packages that depend on `fs` module
+            config.node = {
+              fs: 'empty',
+            };
 
-    if (ANALYZE) {
-      config.plugins.push(new BundleAnalyzerPlugin({
-        analyzerMode: 'server',
-        analyzerPort: isServer ? 8888 : 8889,
-        openAnalyzer: true,
-      }));
-    }
-    if (PRODUCTION) {
-      config.plugins.push(extractCSSPlugin);
-    }
+            if (ANALYZE) {
+              config.plugins.push(
+                new BundleAnalyzerPlugin({
+                  analyzerMode: 'server',
+                  analyzerPort: isServer ? 8888 : 8889,
+                  openAnalyzer: true,
+                }),
+              );
+            }
+            if (PRODUCTION) {
+              config.plugins.push(extractCSSPlugin);
+            }
 
-    return config;
-  },
-})))));
+            return config;
+          },
+        }),
+      ),
+    ),
+  ),
+);
