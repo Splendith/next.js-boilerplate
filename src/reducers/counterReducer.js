@@ -4,7 +4,7 @@ const defaultState = {
   count: 0,
   countPersist: 0,
 };
-export default function (state = defaultState, action) {
+export default function(state = defaultState, action) {
   switch (action.type) {
     case actionTypes.COUNTER_ADD_COUNT:
       return {

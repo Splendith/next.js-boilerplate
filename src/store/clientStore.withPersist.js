@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import reducers from '../reducers/_persist';
 import { loadSuccess } from '../actions/status';
 
-export default (initialState) => {
+export default initialState => {
   const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunk)));
 
   /* const ps = */ persistStore(store, null, () => {

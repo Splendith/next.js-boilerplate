@@ -5,8 +5,5 @@ import thunk from 'redux-thunk';
 
 import reducers from '../reducers/_noPersist';
 
-export default initialState => createStore(
-  reducers,
-  initialState,
-  composeWithDevTools(applyMiddleware(thunk)),
-);
+export default initialState =>
+  createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunk)));

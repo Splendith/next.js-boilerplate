@@ -22,7 +22,7 @@ Fully Integrates with
 
 ### 2. [Jest](https://facebook.github.io/jest/)
 
-### 3. [ESLint](https://github.com/eslint/eslint) with airbnb convention
+### 3. [ESLint](https://github.com/eslint/eslint) with airbnb convention and prettier
 
 ### 4. [Storybook](https://github.com/storybooks/storybook)
 
