@@ -61,6 +61,7 @@ typings/
 build
 dist
 .next
+.build
 
 # Misc
 .DS_Store
