@@ -1,4 +1,10 @@
-# production
-.next/*
-static/*
-storybook-static/*
+# Allow dot-started directories
+!/.next_config
+!/.storybook
+
+# Disallow production directories
+.next
+.build
+/out/
+/static/
+storybook-static/
