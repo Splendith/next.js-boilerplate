@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
+import { darken } from 'polished';
 
 import { addCount, clearCount } from '@/actions/counter';
-import { darken } from 'polished';
 
 const Box = styled.div`
   padding: 20px;
