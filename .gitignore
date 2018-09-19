@@ -58,12 +58,11 @@ typings/
 .env
 
 # Next.js
-build
-dist
 .next
+/out/
 
 # Misc
 .DS_Store
 .vscode
 .idea
-storybook-static
+storybook-static/
