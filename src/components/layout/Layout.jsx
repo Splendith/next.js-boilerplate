@@ -9,7 +9,7 @@ import Router from 'next/router';
 
 // NProgress
 import 'nprogress/nprogress.css';
-import '@/styles/scss/nprogress.scss';
+import '@/styles/scss/nprogress/nprogress.scss';
 import NProgress from 'nprogress';
 
 // Global CSS
@@ -17,8 +17,9 @@ import '@/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
-import Media from '@/styles/utils/Media';
-import DefaultTheme from '@/styles/themes/Default';
+import Media from '@/styles/js/utils/Media';
+import DefaultTheme from '@/styles/js/themes/Default';
+import GlobalStyle from '@/styles/js/lib/GlobalStyle';
 
 Router.onRouteChangeStart = () => {
   NProgress.configure({ showSpinner: false });
@@ -41,6 +42,7 @@ const Wrapper = styled.div`
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <div>
+      <GlobalStyle />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </Head>
