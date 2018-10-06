@@ -5,8 +5,7 @@ const routes = require('../routes');
 const port = 3000;
 
 const dev = process.env.NODE_ENV !== 'production';
-const dir = './src';
-const app = next({ dev, dir });
+const app = next({ dev });
 const handler = routes.getRequestHandler(app);
 
 app.prepare().then(() => {
