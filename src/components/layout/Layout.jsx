@@ -17,7 +17,7 @@ import '@/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
-import Media from '@/styles/utils/Media';
+import Media from '@/styles/lib/Media';
 import DefaultTheme from '@/styles/themes/Default';
 
 Router.onRouteChangeStart = () => {
