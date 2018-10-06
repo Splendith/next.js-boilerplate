@@ -17,7 +17,7 @@ import '@/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
-import Media from '@/styles/js/utils/Media';
+import Media from '@/styles/js/lib/Media';
 import DefaultTheme from '@/styles/js/themes/Default';
 import GlobalStyle from '@/styles/js/lib/GlobalStyle';
 
@@ -42,10 +42,10 @@ const Wrapper = styled.div`
 const Layout = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <div>
-      <GlobalStyle />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </Head>
+      <GlobalStyle />
       <Wrapper>{children}</Wrapper>
     </div>
   </ThemeProvider>

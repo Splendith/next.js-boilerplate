@@ -12,7 +12,7 @@ module.exports = withFonts(
     withSassVars(
       withSass(
         withCSS({
-          distDir: '../.build',
+          distDir: '.build',
           webpack: (configParam, { isServer }) => {
             const config = configParam;
 
