@@ -13,7 +13,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
       Hello world!
     </h1>
     <div
-      className="Image-sc-1jo6193-0 kQstHS"
+      className="Image-sc-11t8wqi-0 jeDhTs"
     >
       <img
         alt="Smile"
@@ -41,6 +41,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
       Redux global state
     </h5>
     <button
+      aria-label={null}
       className="btn btn-primary"
       onClick={[Function]}
       type="button"
@@ -49,6 +50,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     </button>
      
     <button
+      aria-label={null}
       className="btn btn-outline-secondary"
       onClick={[Function]}
       type="button"
