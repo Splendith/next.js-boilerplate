@@ -15,6 +15,5 @@ export default Object.keys(sizes).reduce((acc, label) => {
       ${css(...args)};
     }
   `;
-
   return acc;
 }, {});
