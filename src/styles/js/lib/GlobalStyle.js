@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Kanit";
     src: url(${Kanit});
   }
+  body {
+    color: ${({ theme }) => theme.defaultFontColor};
+  }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Kanit";
     font-weight: normal;
