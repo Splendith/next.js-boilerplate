@@ -4,6 +4,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        include: [path.resolve(__dirname, '../src/styles/scss/_variables.scss')],
+        use: {
+          loader: 'sass-extract-loader',
+          options: {
+            plugins: ['sass-extract-js'],
+          },
+        },
+      },
+      {
         test: /.scss$/,
         include: path.resolve(__dirname, '../'),
         loaders: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
