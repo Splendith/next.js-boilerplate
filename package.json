@@ -22,7 +22,7 @@
     "express": "^4.16.4",
     "file-loader": "^2.0.0",
     "localforage": "^1.7.3",
-    "next": "^7.0.2",
+    "next": "^7.0.2-canary.24",
     "next-redux-wrapper": "^2.0.0",
     "next-routes": "^1.4.2",
     "node-sass": "^4.10.0",
