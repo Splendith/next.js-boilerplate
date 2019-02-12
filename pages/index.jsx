@@ -5,14 +5,14 @@ import styled from 'styled-components';
 import { Link } from '~/routes';
 
 // Styled component element
-import Title from '@/components/elements/Title';
+import Title from 'src/components/elements/Title';
 
 // Sample ES6 import
 import smile from '~/static/img/smile.png';
 
 // Dynamic import
-import CounterPage from '@/components/CounterPage';
-// const CounterPage = dynamic(import('@/components/CounterPage'));
+import CounterPage from 'src/components/CounterPage';
+// const CounterPage = dynamic(import('src/components/CounterPage'));
 
 const Image = styled.div`
   margin-bottom: 2rem;

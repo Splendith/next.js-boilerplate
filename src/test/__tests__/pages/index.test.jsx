@@ -5,7 +5,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-import ReduxWrapper from '@/test/components/ReduxWrapper';
+import ReduxWrapper from 'src/test/components/ReduxWrapper';
 import Index from '~/pages/index';
 
 describe('With Enzyme', () => {

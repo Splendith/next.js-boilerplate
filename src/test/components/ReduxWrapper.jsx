@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import withRedux from 'next-redux-wrapper';
-import initStore from '@/store/';
+import initStore from 'src/store/';
 
 const ReduxWrapper = ({ store, children }) => <Provider store={store}>{children}</Provider>;
 

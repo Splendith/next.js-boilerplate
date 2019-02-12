@@ -9,17 +9,17 @@ import Router from 'next/router';
 
 // NProgress
 import 'nprogress/nprogress.css';
-import '@/styles/scss/nprogress/nprogress.scss';
+import 'src/styles/scss/nprogress/nprogress.scss';
 import NProgress from 'nprogress';
 
 // Global CSS
-import '@/styles/scss/style.scss';
+import 'src/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
-import Media from '@/styles/js/lib/Media';
-import DefaultTheme from '@/styles/js/themes/Default';
-import GlobalStyle from '@/styles/js/lib/GlobalStyle';
+import Media from 'src/styles/js/lib/Media';
+import DefaultTheme from 'src/styles/js/themes/Default';
+import GlobalStyle from 'src/styles/js/lib/GlobalStyle';
 
 Router.onRouteChangeStart = () => {
   NProgress.configure({ showSpinner: false });
