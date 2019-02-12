@@ -13,6 +13,7 @@ module.exports = withFonts(
       withSass(
         withCSS({
           distDir: '.build',
+          // target: 'serverless',
           webpack: (configParam, { isServer }) => {
             const config = configParam;
 

@@ -72,11 +72,11 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
 <CounterPage>
-  <SideEffect(Head)>
+  <Head>
     <title>
       Hello world!
     </title>
-  </SideEffect(Head)>
+  </Head>
   <ForwardRef>
     Hello world!
   </ForwardRef>
