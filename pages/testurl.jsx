@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Link } from '~/routes';
@@ -9,8 +9,7 @@ import { Link } from '~/routes';
 import Title from 'src/components/elements/Title';
 
 // Dynamic import
-import CounterPage from 'src/components/CounterPage';
-// const CounterPage = dynamic(import('src/components/CounterPage'));
+const CounterPage = dynamic(import('src/components/CounterPage'));
 
 const TestUrl = ({ router }) => (
   <CounterPage>

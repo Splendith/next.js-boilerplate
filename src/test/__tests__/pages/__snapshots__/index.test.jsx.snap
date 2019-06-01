@@ -71,21 +71,21 @@ exports[`With Snapshot Testing full snapshot 1`] = `
 `;
 
 exports[`With Snapshot Testing shallow snapshot 1`] = `
-<CounterPage>
+<LoadableComponent>
   <Head>
     <title>
       Hello world!
     </title>
   </Head>
-  <ForwardRef>
+  <ForwardRef(Title)>
     Hello world!
-  </ForwardRef>
-  <ForwardRef>
+  </ForwardRef(Title)>
+  <ForwardRef(Image)>
     <img
       alt="Smile"
       src="test-file-stub"
     />
-  </ForwardRef>
+  </ForwardRef(Image)>
   <LinkRoutes
     route="/test/5?queryId=8"
   >
@@ -107,5 +107,5 @@ exports[`With Snapshot Testing shallow snapshot 1`] = `
       route=“testurl“ params={{ id: 7, queryId: 9 }}
     </a>
   </LinkRoutes>
-</CounterPage>
+</LoadableComponent>
 `;

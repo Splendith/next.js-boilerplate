@@ -4,9 +4,14 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import preloadAll from 'jest-next-dynamic';
 
 import ReduxWrapper from 'src/test/components/ReduxWrapper';
 import Index from 'pages/index';
+
+beforeAll(async () => {
+  await preloadAll();
+});
 
 describe('With Enzyme', () => {
   it('should shows "Hello world!"', () => {

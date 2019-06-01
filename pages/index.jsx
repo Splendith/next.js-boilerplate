@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { Link } from '~/routes';
 
@@ -11,8 +11,7 @@ import Title from 'src/components/elements/Title';
 import smile from '~/static/img/smile.png';
 
 // Dynamic import
-import CounterPage from 'src/components/CounterPage';
-// const CounterPage = dynamic(import('src/components/CounterPage'));
+const CounterPage = dynamic(import('src/components/CounterPage'));
 
 const Image = styled.div`
   margin-bottom: 2rem;
