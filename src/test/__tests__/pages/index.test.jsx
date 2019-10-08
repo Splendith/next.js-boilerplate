@@ -2,12 +2,12 @@
 
 import { shallow } from 'enzyme';
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import preloadAll from 'jest-next-dynamic';
 
 import ReduxWrapper from 'src/test/components/ReduxWrapper';
-import Index from 'pages/index';
+import Index from '~pages/index';
 
 beforeAll(async () => {
   await preloadAll();
@@ -32,12 +32,15 @@ describe('With Snapshot Testing', () => {
     const snapshot = shallowRenderer.render(<Index />);
     expect(snapshot).toMatchSnapshot();
   });
-  it('full snapshot', () => {
-    const component = renderer.create(
-      <ReduxWrapper>
-        <Index />
-      </ReduxWrapper>,
-    );
+  it('full snapshot', async () => {
+    let component;
+    await act(async () => {
+      component = renderer.create(
+        <ReduxWrapper>
+          <Index />
+        </ReduxWrapper>,
+      );
+    });
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

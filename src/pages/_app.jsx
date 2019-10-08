@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import withRedux from 'next-redux-wrapper';
 import Router from 'next/router';
-import initStore from 'src/store/';
-import Layout from 'src/components/layout/Layout';
+import initStore from '~src/store/';
+import Layout from '~src/components/layout/Layout';
 
 Router.events.on('routeChangeComplete', () => {
   if (process.env.NODE_ENV !== 'production') {
@@ -16,17 +16,9 @@ Router.events.on('routeChangeComplete', () => {
 });
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    return {
-      pageProps: {
-        // Call page-level getInitialProps
-        ...(Component.getInitialProps ? await Component.getInitialProps(ctx) : {}),
-      },
-    };
-  }
-
   render() {
     const { Component, pageProps, store } = this.props;
+    /* eslint-disable */
     return (
       <Container>
         <Provider store={store}>
@@ -36,6 +28,7 @@ class MyApp extends App {
         </Provider>
       </Container>
     );
+    /* eslint-enable */
   }
 }
 

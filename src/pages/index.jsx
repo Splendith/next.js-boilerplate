@@ -5,13 +5,13 @@ import styled from 'styled-components';
 import { Link } from '~/routes';
 
 // Styled component element
-import Title from 'src/components/elements/Title';
+import Title from '~src/components/elements/Title';
 
 // Sample ES6 import
-import smile from '~/static/img/smile.png';
+import smile from '~static/img/smile.png';
 
 // Dynamic import
-const CounterPage = dynamic(import('src/components/CounterPage'));
+const CounterPage = dynamic(import('~src/components/CounterPage'));
 
 const Image = styled.div`
   margin-bottom: 2rem;

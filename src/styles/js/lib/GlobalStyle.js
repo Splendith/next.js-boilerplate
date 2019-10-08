@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Kanit from '~/static/fonts/Kanit-Light.ttf';
+import Kanit from '~static/fonts/Kanit-Light.ttf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

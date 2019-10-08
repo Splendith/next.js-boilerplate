@@ -13,7 +13,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
       Hello world!
     </h1>
     <div
-      className="Image-sc-11t8wqi-0 jeDhTs"
+      className="Image-sc-1jo6193-0 kQstHS"
     >
       <img
         alt="Smile"
@@ -23,6 +23,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     <a
       href="/test/5?queryId=8"
       onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       route=“/test/5?queryId=8“
     </a>
@@ -30,6 +31,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     <a
       href="/test/7?queryId=9"
       onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       route=“testurl“ params={{ id: 7, queryId: 9 }}
     </a>
@@ -64,7 +66,8 @@ exports[`With Snapshot Testing full snapshot 1`] = `
       0
     </div>
     <div>
-      Loading...
+      Counter (persist): 
+      0
     </div>
   </div>
 </div>

@@ -1,7 +1,8 @@
 const path = require('path');
 
-module.exports = (nextConfig = {}) =>
-  Object.assign({}, nextConfig, {
+module.exports = (nextConfig = {}) => ({
+  ...nextConfig,
+  ...{
     webpack(config, options) {
       if (!options.defaultLoaders) {
         throw new Error(
@@ -26,4 +27,5 @@ module.exports = (nextConfig = {}) =>
 
       return config;
     },
-  });
+  },
+});

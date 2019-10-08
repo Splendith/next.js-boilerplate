@@ -6,8 +6,10 @@
         "root": ["./"],
         "alias": {
           "~": "./",
-          "pages": "./pages/",
-          "src": "./src/"
+          "~src": "./src/",
+          "~pages": "./src/pages/",
+          "~public": "./public/",
+          "~static": "./public/static/"
         }
       }
     ],
