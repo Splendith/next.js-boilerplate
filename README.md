@@ -4,7 +4,7 @@ My Next.js Boilerplate
 
 ## Includes
 
-### 1. [Next.js](https://github.com/zeit/next.js) v8.1
+### 1. [Next.js](https://github.com/zeit/next.js) v9.1
 
 Fully Integrates with
 
