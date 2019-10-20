@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -13,36 +13,29 @@ const Box = styled.div`
   background: ${darken(0.04, '#fff')};
 `;
 
-class Counter extends Component {
-  // eslint-disable-next-line class-methods-use-this
-  renderLoading() {
+const Counter = ({ countPersist, addCountAction, clearCountAction, count, status }) => {
+  const renderLoading = () => {
     return <div>Loading...</div>;
-  }
-
-  renderContent() {
-    const { countPersist } = this.props;
+  };
+  const renderContent = () => {
     return <div>Counter (persist): {countPersist}</div>;
-  }
-
-  render() {
-    const { addCountAction, clearCountAction, count, status } = this.props;
-    return (
-      <Box>
-        <h5>Redux global state</h5>
-        <Button color="primary" onClick={addCountAction}>
-          Add count
-        </Button>{' '}
-        <Button outline onClick={clearCountAction}>
-          Clear count
-        </Button>
-        <br />
-        <br />
-        <div>Counter: {count}</div>
-        {!status.loaded ? this.renderLoading() : this.renderContent()}
-      </Box>
-    );
-  }
-}
+  };
+  return (
+    <Box>
+      <h5>Redux global state</h5>
+      <Button color="primary" onClick={addCountAction}>
+        Add count
+      </Button>{' '}
+      <Button outline onClick={clearCountAction}>
+        Clear count
+      </Button>
+      <br />
+      <br />
+      <div>Counter: {count}</div>
+      {!status.loaded ? renderLoading() : renderContent()}
+    </Box>
+  );
+};
 
 Counter.propTypes = {
   status: PropTypes.shape().isRequired,
