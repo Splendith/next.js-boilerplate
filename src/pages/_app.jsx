@@ -1,5 +1,5 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import withRedux from 'next-redux-wrapper';
@@ -20,13 +20,11 @@ class MyApp extends App {
     const { Component, pageProps, store } = this.props;
     /* eslint-disable */
     return (
-      <Container>
-        <Provider store={store}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </Provider>
-      </Container>
+      <Provider store={store}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
     );
     /* eslint-enable */
   }
