@@ -8,18 +8,12 @@ import Head from 'next/head';
 import Router from 'next/router';
 
 // NProgress
-import 'nprogress/nprogress.css';
-import '~src/styles/scss/nprogress/nprogress.scss';
 import NProgress from 'nprogress';
-
-// Global CSS
-import '~src/styles/scss/style.scss';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
 import Media from '~src/styles/js/lib/Media';
 import DefaultTheme from '~src/styles/js/themes/Default';
-import GlobalStyle from '~src/styles/js/lib/GlobalStyle';
 
 Router.onRouteChangeStart = () => {
   NProgress.configure({ showSpinner: false });
@@ -45,7 +39,6 @@ const Layout = ({ children }) => (
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       </Head>
-      <GlobalStyle />
       <Wrapper>{children}</Wrapper>
     </div>
   </ThemeProvider>

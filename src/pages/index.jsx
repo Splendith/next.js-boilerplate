@@ -7,14 +7,15 @@ import { Link } from '~/routes';
 // Styled component element
 import Title from '~src/components/elements/Title';
 
-// Sample ES6 import
-import smile from '~static/img/smile.png';
-
 // Dynamic import
 const CounterPage = dynamic(import('~src/components/CounterPage'));
 
 const Image = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+`;
+
+const Welcome = styled.p`
+  color: ${({ theme }) => theme.indigo}; /* Theme from src/styles/js/themes/Default.js */
 `;
 
 const Index = () => (
@@ -24,8 +25,9 @@ const Index = () => (
     </Head>
     <Title>Hello world!</Title>
     <Image>
-      <img src={smile} alt="Smile" />
+      <img src="/static/img/smile.png" alt="Smile" />
     </Image>
+    <Welcome>Welcome to this website!</Welcome>
     <Link route="/test/5?queryId=8">
       <a>route=&ldquo;/test/5?queryId=8&ldquo;</a>
     </Link>

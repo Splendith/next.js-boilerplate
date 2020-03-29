@@ -1,3 +1,23 @@
 // This file is deprecated
 // Global style is moved to styled-components Global Styles API
 // You can set your global style at /src/styles/js/lib/GlobalStyle.js
+
+@import 'variables.module';
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('/static/fonts/Kanit-Light.ttf');
+}
+body {
+  color: $gray-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kanit';
+  font-weight: normal;
+}

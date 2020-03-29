@@ -1,7 +1,8 @@
 // import variables from SCSS file and convert to JS object
-// (using sass-extract-loader with sass-extract-js plugin, configuration in
-// .next_config/load-sass-variables.js)
-import theme from '../../scss/_variables.scss';
+// (using sass-extract-loader with sass-extract-js plugin in src/scss/_variables.module.scss)
+
+// Extract our Sass variables into a JS object
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../../scss/_variables.module.scss'); // eslint-disable-line
 
 const Default = {
   ...theme,

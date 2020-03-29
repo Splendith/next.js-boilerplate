@@ -4,17 +4,13 @@ import { ThemeProvider } from 'styled-components';
 import DefaultTheme from 'src/styles/js/themes/Default';
 
 import 'src/styles/scss/style.scss';
-import GlobalStyle from 'src/styles/js/lib/GlobalStyle';
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../src/stories', true, /.stories.jsx?$/);
 function loadStories() {
   addDecorator(story => (
     <ThemeProvider theme={DefaultTheme}>
-      <div>
-        <GlobalStyle />
-        {story()}
-      </div>
+      <div>{story()}</div>
     </ThemeProvider>
   ));
   req.keys().forEach(filename => req(filename));

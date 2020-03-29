@@ -2,24 +2,29 @@
 
 exports[`With Snapshot Testing full snapshot 1`] = `
 <div
-  className="Wrapper-sc-1v2z7vs-0 dnIgmU"
+  className="Wrapper-sc-1v2z7vs-0 iWyySk"
 >
   <div
-    className="Box-sc-1v2z7vs-1 dkGnjF"
+    className="Box-sc-1v2z7vs-1 dBzgVg"
   >
     <h1
-      className="Title-sc-1w6841p-0 fJFdOl"
+      className="Title-sc-1w6841p-0 fzvBpy"
     >
       Hello world!
     </h1>
     <div
-      className="Image-sc-1jo6193-0 kQstHS"
+      className="Image-sc-1jo6193-0 eWzmQJ"
     >
       <img
         alt="Smile"
-        src="test-file-stub"
+        src="/static/img/smile.png"
       />
     </div>
+    <p
+      className="Welcome-sc-1jo6193-1 iFnFWv"
+    >
+      Welcome to this website!
+    </p>
     <a
       href="/test/5?queryId=8"
       onClick={[Function]}
@@ -37,7 +42,7 @@ exports[`With Snapshot Testing full snapshot 1`] = `
     </a>
   </div>
   <div
-    className="Box-p23pin-0 dpFhYK"
+    className="Box-p23pin-0 eqtptK"
   >
     <h5>
       Redux global state
@@ -80,15 +85,18 @@ exports[`With Snapshot Testing shallow snapshot 1`] = `
       Hello world!
     </title>
   </Head>
-  <ForwardRef(Title)>
+  <Title>
     Hello world!
-  </ForwardRef(Title)>
-  <ForwardRef(Image)>
+  </Title>
+  <Image>
     <img
       alt="Smile"
-      src="test-file-stub"
+      src="/static/img/smile.png"
     />
-  </ForwardRef(Image)>
+  </Image>
+  <Welcome>
+    Welcome to this website!
+  </Welcome>
   <LinkRoutes
     route="/test/5?queryId=8"
   >
