@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Link } from '~/routes';
 
 // Styled component element
 import Title from '~src/components/elements/Title';
@@ -12,6 +12,7 @@ const CounterPage = dynamic(import('~src/components/CounterPage'));
 
 const TestUrl = () => {
   const router = useRouter();
+  console.log(router.query);
   return (
     <CounterPage>
       <Head>
@@ -22,7 +23,7 @@ const TestUrl = () => {
         ID: {router.query.id}, Query ID: {router.query.queryId}
       </div>
       <br />
-      <Link route="/">
+      <Link href="/">
         <a>Back to index</a>
       </Link>
     </CounterPage>

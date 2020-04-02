@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import { Link } from '~/routes';
+import Link from '~src/components/Link';
 
 // Styled component element
 import Title from '~src/components/elements/Title';
@@ -28,12 +28,8 @@ const Index = () => (
       <img src="/static/img/smile.png" alt="Smile" />
     </Image>
     <Welcome>Welcome to this website!</Welcome>
-    <Link route="/test/5?queryId=8">
+    <Link pathname="testurl" items={[['id', 5]]} query={{ queryId: 8 }}>
       <a>route=&ldquo;/test/5?queryId=8&ldquo;</a>
-    </Link>
-    <br />
-    <Link route="testurl" params={{ id: 7, queryId: 9 }}>
-      <a>route=&ldquo;testurl&ldquo; params=&#123;&#123; id: 7, queryId: 9 &#125;&#125;</a>
     </Link>
   </CounterPage>
 );
