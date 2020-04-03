@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 // PropTypes
 import PropTypes from 'prop-types';
 
 // Next Modules
 import Head from 'next/head';
-import Router from 'next/router';
+import Router, { SingletonRouter } from 'next/router';
 
 // NProgress
 import NProgress from 'nprogress';
@@ -15,12 +15,17 @@ import styled, { ThemeProvider } from 'styled-components';
 import Media from '~src/styles/js/lib/Media';
 import DefaultTheme from '~src/styles/js/themes/Default';
 
-Router.onRouteChangeStart = () => {
+Router.events.on('routeChangeStart', () => {
   NProgress.configure({ showSpinner: false });
   NProgress.start();
-};
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+});
+
+Router.events.on('routeChangeComplete', () => {
+  NProgress.done();
+});
+Router.events.on('routeChangeError', () => {
+  NProgress.done();
+});
 
 const Wrapper = styled.div`
   width: 100%;
@@ -33,7 +38,7 @@ const Wrapper = styled.div`
   `};
 `;
 
-const Layout = ({ children }) => (
+const Layout: FunctionComponent = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <div>
       <Head>
@@ -43,9 +48,5 @@ const Layout = ({ children }) => (
     </div>
   </ThemeProvider>
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

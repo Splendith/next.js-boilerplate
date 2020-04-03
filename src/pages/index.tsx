@@ -18,7 +18,7 @@ const Welcome = styled.p`
   color: ${({ theme }) => theme.indigo}; /* Theme from src/styles/js/themes/Default.js */
 `;
 
-const Index = () => (
+const Index: React.FunctionComponent = () => (
   <CounterPage>
     <Head>
       <title>Hello world!</title>

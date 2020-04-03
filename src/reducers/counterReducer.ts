@@ -1,18 +1,18 @@
-import { actionTypes } from '../actions/counter';
+import { ActionTypes } from '../actions/counter';
 
 const defaultState = {
   count: 0,
   countPersist: 0,
 };
-export default function(state = defaultState, action) {
+export default function(state = defaultState, action: ActionTypes) {
   switch (action.type) {
-    case actionTypes.COUNTER_ADD_COUNT:
+    case 'COUNTER_ADD_COUNT':
       return {
         ...state,
         count: state.count + 1,
         countPersist: state.countPersist + 1,
       };
-    case actionTypes.COUNTER_CLEAR_COUNT:
+    case 'COUNTER_CLEAR_COUNT':
       return {
         ...state,
         count: 0,

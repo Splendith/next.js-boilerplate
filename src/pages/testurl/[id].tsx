@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
@@ -10,9 +10,8 @@ import Title from '~src/components/elements/Title';
 // Dynamic import
 const CounterPage = dynamic(import('~src/components/CounterPage'));
 
-const TestUrl = () => {
+const TestUrl: FunctionComponent = () => {
   const router = useRouter();
-  console.log(router.query);
   return (
     <CounterPage>
       <Head>

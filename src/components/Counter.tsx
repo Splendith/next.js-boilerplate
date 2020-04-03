@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import { Button } from 'reactstrap';
@@ -11,7 +11,7 @@ const Box = styled.div`
   background: ${darken(0.04, '#fff')};
 `;
 
-const Counter = () => {
+const Counter: FunctionComponent = () => {
   const { count, countPersist } = useSelector(state => state.counter);
   const status = useSelector(state => state.status);
   const dispatch = useDispatch();

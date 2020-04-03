@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 import Counter from './Counter';
@@ -14,15 +13,11 @@ const Box = styled.div`
   text-align: center;
 `;
 
-const CounterPage = ({ children }) => (
+const CounterPage: FunctionComponent = ({ children }) => (
   <Wrapper>
     <Box>{children}</Box>
     <Counter />
   </Wrapper>
 );
-
-CounterPage.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default CounterPage;

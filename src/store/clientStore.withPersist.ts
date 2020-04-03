@@ -4,10 +4,10 @@ import { persistStore } from 'redux-persist';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-import reducers from '../reducers/_persist';
+import reducers, { RootState } from '../reducers/_persist';
 import { loadSuccess } from '../actions/status';
 
-export default initialState => {
+export default (initialState: RootState) => {
   const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(thunk)));
 
   /* const ps = */ persistStore(store, null, () => {
