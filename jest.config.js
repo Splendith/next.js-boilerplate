@@ -1,9 +1,13 @@
 module.exports = {
-  setupFilesAfterEnv: ['<rootDir>/src/test/jest.setup.js'],
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+  collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
+  setupFilesAfterEnv: ['<rootDir>/src/test/jest.setup.ts'],
+  testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.build/'],
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+    // '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
+  },
+  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/src/test/__mocks__/fileMock.js',
-    '\\.(css|scss|less)$': '<rootDir>/src/test/__mocks__/styleMock.js',
+    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
 };

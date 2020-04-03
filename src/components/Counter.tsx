@@ -5,6 +5,7 @@ import { Button } from 'reactstrap';
 import { darken } from 'polished';
 
 import { addCount, clearCount } from '~src/actions/counter';
+import { RootState } from '../reducers/_noPersist';
 
 const Box = styled.div`
   padding: 20px;
@@ -12,8 +13,10 @@ const Box = styled.div`
 `;
 
 const Counter: FunctionComponent = () => {
-  const { count, countPersist } = useSelector(state => state.counter);
-  const status = useSelector(state => state.status);
+  const { count, countPersist } = useSelector<RootState, RootState['counter']>(
+    state => state.counter,
+  );
+  const status = useSelector<RootState, RootState['status']>(state => state.status);
   const dispatch = useDispatch();
   const addCountAction = () => dispatch(addCount());
   const clearCountAction = () => dispatch(clearCount());

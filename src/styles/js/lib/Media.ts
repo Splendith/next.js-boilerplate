@@ -10,9 +10,9 @@ const sizes: Record<string, number> = {
 
 // Iterate through the sizes and create a media template
 const mapped = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args: CSSObject) => css`
+  acc[label] = (args: CSSObject) => css`
     @media (min-width: ${sizes[label] / 16}em) {
-      ${css(...args)};
+      ${css(args)};
     }
   `;
   return acc;
