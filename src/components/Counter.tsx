@@ -16,7 +16,7 @@ const Counter: React.FC = () => {
 
   return (
     <Box>
-      <h5>Redux global state</h5>
+      <h5>Recoil global state</h5>
       <Button
         color="primary"
         onClick={() => {

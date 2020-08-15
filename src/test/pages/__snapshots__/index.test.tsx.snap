@@ -36,7 +36,7 @@ exports[`Index matches snapshot 1`] = `
       class="Box-sc-1hlek3p-0 iofyeJ"
     >
       <h5>
-        Redux global state
+        Recoil global state
       </h5>
       <button
         class="btn btn-primary"
