@@ -20,7 +20,6 @@
     "jest-next-dynamic": "^1.0.1",
     "localforage": "^1.9.0",
     "next": "^9.5.2",
-    "next-redux-wrapper": "^6.0.2",
     "node-sass": "^4.14.1",
     "nprogress": "^0.2.0",
     "polished": "^3.6.5",
@@ -55,10 +54,12 @@
     "eslint-plugin-react": "^7.20.6",
     "jest": "^26.4.0",
     "jest-watch-typeahead": "^0.6.0",
+    "jquery": "^3.5.1",
     "sass-extract": "^2.1.0",
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",
     "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
     "webpack-bundle-analyzer": "^3.8.0"
   }
 }
