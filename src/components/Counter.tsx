@@ -1,45 +1,36 @@
-import React, { FunctionComponent } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import styled from 'styled-components';
 import { Button } from 'reactstrap';
 import { darken } from 'polished';
-
-import { addCount, clearCount } from '~src/actions/counter';
-import { RootState } from '../reducers/_noPersist';
+import { useRecoilState, useResetRecoilState } from 'recoil';
+import { countState } from '~libs/recoil-atoms';
 
 const Box = styled.div`
   padding: 20px;
   background: ${darken(0.04, '#fff')};
 `;
 
-const Counter: FunctionComponent = () => {
-  const { count, countPersist } = useSelector<RootState, RootState['counter']>(
-    state => state.counter,
-  );
-  const status = useSelector<RootState, RootState['status']>(state => state.status);
-  const dispatch = useDispatch();
-  const addCountAction = () => dispatch(addCount());
-  const clearCountAction = () => dispatch(clearCount());
+const Counter: React.FC = () => {
+  const [count, setCount] = useRecoilState(countState);
+  const reset = useResetRecoilState(countState);
 
-  const renderLoading = () => {
-    return <div>Loading...</div>;
-  };
-  const renderContent = () => {
-    return <div>Counter (persist): {countPersist}</div>;
-  };
   return (
     <Box>
       <h5>Redux global state</h5>
-      <Button color="primary" onClick={addCountAction}>
+      <Button
+        color="primary"
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
         Add count
       </Button>{' '}
-      <Button outline onClick={clearCountAction}>
+      <Button outline onClick={reset}>
         Clear count
       </Button>
       <br />
       <br />
       <div>Counter: {count}</div>
-      {!status.loaded ? renderLoading() : renderContent()}
     </Box>
   );
 };

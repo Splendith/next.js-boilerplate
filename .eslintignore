@@ -1,10 +1,9 @@
 # Allow dot-started directories
 !/.next_config
-!/.storybook
 
 # Disallow production directories
-.next
-.build
-/out/
-/static/
-storybook-static/
+**/node_modules/*
+**/out/*
+**/.next/*
+**/.build/*
+**/public/*

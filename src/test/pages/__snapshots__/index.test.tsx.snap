@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Wrapper-gu0x4c-0 kryztR"
+  >
+    <div
+      class="Box-gu0x4c-1 eWkUHl"
+    >
+      <h1
+        class="Title-fubljw-0 bFihJi"
+      >
+        Hello world!
+      </h1>
+      <div
+        class="Image-sc-1ooavon-0 cqWqZz"
+      >
+        <img
+          alt="Smile"
+          src="/static/img/smile.png"
+        />
+      </div>
+      <p
+        class="Welcome-sc-1ooavon-1 eNuoct"
+      >
+        Welcome to this website!
+      </p>
+      <a
+        href="/testurl/5?queryId=8"
+      >
+        route=“/test/5?queryId=8“
+      </a>
+    </div>
+    <div
+      class="Box-sc-1hlek3p-0 iofyeJ"
+    >
+      <h5>
+        Redux global state
+      </h5>
+      <button
+        class="btn btn-primary"
+        type="button"
+      >
+        Add count
+      </button>
+       
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+      >
+        Clear count
+      </button>
+      <br />
+      <br />
+      <div>
+        Counter: 0
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,16 +1,16 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 // Styled component element
-import Title from '~src/components/elements/Title';
+import Title from '~components/elements/Title';
 
 // Dynamic import
-const CounterPage = dynamic(import('~src/components/CounterPage'));
+const CounterPage = dynamic(import('~components/CounterPage'));
 
-const TestUrl: FunctionComponent = () => {
+const TestUrl: React.FC = () => {
   const router = useRouter();
   return (
     <CounterPage>

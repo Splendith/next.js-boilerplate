@@ -5,9 +5,12 @@
       {
         "root": ["./"],
         "alias": {
-          "~": "./",
-          "~src": "./src/",
+          "~components": "./src/components/",
+          "~libs": "./src/libs/",
           "~pages": "./src/pages/",
+          "~stores": "./src/stores/",
+          "~styles": "./src/styles/",
+          "~test": "./src/test/",
           "~public": "./public/",
           "~static": "./public/static/"
         }
@@ -15,8 +18,15 @@
     ],
     [
       "styled-components",
-      { "ssr": true, "displayName": true, "preprocess": false, "fileName": false }
-    ]
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false,
+        "fileName": false
+      }
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ],
   "env": {
     "development": {
@@ -27,7 +37,7 @@
     },
     "test": {
       "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]],
-      "plugins": ["babel-plugin-dynamic-import-node"]
+      "plugins": ["dynamic-import-node"]
     }
   }
 }

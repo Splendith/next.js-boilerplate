@@ -1,4 +1,4 @@
-import { css, CSSObject, ThemedCssFunction } from 'styled-components';
+import { css, CSSObject } from 'styled-components';
 
 const sizes: Record<string, number> = {
   xl: 1200,

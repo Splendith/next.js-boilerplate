@@ -2,23 +2,24 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import Link from '~src/components/Link';
+import Link from '~components/Link';
 
 // Styled component element
-import Title from '~src/components/elements/Title';
+import Title from '~components/elements/Title';
 
 // Dynamic import
-const CounterPage = dynamic(import('~src/components/CounterPage'));
+const CounterPage = dynamic(import('~components/CounterPage'));
 
 const Image = styled.div`
   margin-bottom: 1.5rem;
 `;
 
 const Welcome = styled.p`
-  color: ${({ theme }) => theme.indigo}; /* Theme from src/styles/js/themes/Default.js */
+  color: ${({ theme }) =>
+    theme.indigo}; /* Theme from src/styles/js/themes/Default.js */
 `;
 
-const Index: React.FunctionComponent = () => (
+const Index: React.FC = () => (
   <CounterPage>
     <Head>
       <title>Hello world!</title>
@@ -33,5 +34,4 @@ const Index: React.FunctionComponent = () => (
     </Link>
   </CounterPage>
 );
-
 export default Index;

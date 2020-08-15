@@ -11,20 +11,22 @@ type LinkProps = {
 };
 
 type Overwrite<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
-const Link: FunctionComponent<Overwrite<NextLinkProps, LinkProps>> = props => {
+const Link: FunctionComponent<Overwrite<NextLinkProps, LinkProps>> = (
+  props,
+) => {
   const { href, pathname, items, query } = props;
   if (pathname) {
     let hrefPath = pathname;
     let asPath = pathname;
 
     if (items) {
-      items.forEach(element => {
+      items.forEach((element) => {
         hrefPath = `${hrefPath}/[${element[0]}]`;
         asPath = `${asPath}/${element[1]}`;
       });
     }
 
-    var nextProps = Object.assign({}, props);
+    const nextProps = Object.assign({}, props);
     delete nextProps.pathname;
     delete nextProps.items;
     delete nextProps.query;

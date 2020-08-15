@@ -6,6 +6,7 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -15,11 +16,14 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "~src/*": ["./src/*"],
-      "~pages/*": ["./src/pages/*"],
-      "~public/*": ["./public/*"],
-      "~static/*": ["./public/static/*"]
+      "~components/*": ["src/components/*"],
+      "~libs/*": ["src/libs/*"],
+      "~pages/*": ["src/pages/*"],
+      "~stores/*": ["src/stores/*"],
+      "~styles/*": ["src/styles/*"],
+      "~test/*": ["src/test/*"],
+      "~public/*": ["public/*"],
+      "~static/*": ["public/static/*"]
     }
   },
   "exclude": ["node_modules"],

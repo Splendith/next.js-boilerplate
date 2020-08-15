@@ -1,19 +1,16 @@
 import React, { FunctionComponent } from 'react';
 
-// PropTypes
-import PropTypes from 'prop-types';
-
 // Next Modules
 import Head from 'next/head';
-import Router, { SingletonRouter } from 'next/router';
+import Router from 'next/router';
 
 // NProgress
 import NProgress from 'nprogress';
 
 // Styled Component
 import styled, { ThemeProvider } from 'styled-components';
-import Media from '~src/styles/js/lib/Media';
-import DefaultTheme from '~src/styles/js/themes/Default';
+import Media from '~styles/js/lib/Media';
+import DefaultTheme from '~styles/js/themes/Default';
 
 Router.events.on('routeChangeStart', () => {
   NProgress.configure({ showSpinner: false });
@@ -42,7 +39,10 @@ const Layout: FunctionComponent = ({ children }) => (
   <ThemeProvider theme={DefaultTheme}>
     <div>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
       </Head>
       <Wrapper>{children}</Wrapper>
     </div>

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import Counter from './Counter';
@@ -13,7 +13,7 @@ const Box = styled.div`
   text-align: center;
 `;
 
-const CounterPage: FunctionComponent = ({ children }) => (
+const CounterPage: React.FC = ({ children }) => (
   <Wrapper>
     <Box>{children}</Box>
     <Counter />
